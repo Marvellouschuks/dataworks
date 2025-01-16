@@ -46,13 +46,13 @@
                 "title": "<p>Transforming How<br \/>\nCompanies Share<br \/>\nComputing Power<\/p>\n",
                 "text": "<p>Dataworks creates a secure marketplace where companies can<br \/>\nshare and trade computing resources on demand. Our protocol<br \/>\nhandles everything - from resource allocation to security, allowing<br \/>\nenterprises to maximize their infrasturcture efficiency while<br \/>\nmaintaining complete control and isolation<\/p>\n",
                 "label": "Learn More",
-                "link": "https:\/\/peptone.io\/intrinsically-disordered-proteins\/"
+                "link": "javascript:void(0)"
             },
             "technology": {
                 "title": "<p>Built for<br \/>\nMultiple<br \/>\nWorkloads<\/p>\n",
                 "text": "<p>Our infrastructure seamlessly adapts to different<br \/>\ncomputing needs, maximizing efficiency through<br \/>\nintelligent resource allocation. Each workload type is<br \/>\nsecured through hardware-enforced isolation,<br \/>\nensuring optimal performance across all operations.<\/p>\n",
                 "label": "Our Technology",
-                "link": "https:\/\/peptone.io\/technology\/",
+                "link": "javascript:void(0)",
                 "products": [
                     {
                         "label": "Bespoke<br>Mass Spectrometry",
