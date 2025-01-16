@@ -8,79 +8,7 @@
         "menu_order": 1,
         "menu_item_parent": "0",
         "title": "About Us",
-        "url": "https:\/\/peptone.io\/about-us\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 1892,
-        "post_title": "",
-        "post_excerpt": "",
-        "post_name": "1892",
-        "post_parent": 0,
-        "menu_order": 2,
-        "menu_item_parent": "0",
-        "title": "Technology",
-        "url": "https:\/\/peptone.io\/technology\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 777,
-        "post_title": "Product Engine",
-        "post_excerpt": "",
-        "post_name": "platform",
-        "post_parent": 0,
-        "menu_order": 3,
-        "menu_item_parent": "0",
-        "title": "Product Engine",
-        "url": "https:\/\/peptone.io\/oppenheimer\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 728,
-        "post_title": "Careers",
-        "post_excerpt": "",
-        "post_name": "careers-2",
-        "post_parent": 0,
-        "menu_order": 4,
-        "menu_item_parent": "0",
-        "title": "Careers",
-        "url": "https:\/\/jobs.peptone.io",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 184,
-        "post_title": "",
-        "post_excerpt": "",
-        "post_name": "184",
-        "post_parent": 0,
-        "menu_order": 5,
-        "menu_item_parent": "0",
-        "title": "News",
-        "url": "https:\/\/peptone.io\/news\/",
+        "url": "javascript:void(0)",
         "target": "",
         "attr_title": "",
         "description": "",
@@ -98,7 +26,7 @@
         "menu_order": 6,
         "menu_item_parent": "0",
         "title": "Contact Us",
-        "url": "https:\/\/peptone.io\/contact-us\/",
+        "url": "javascript:void(0)",
         "target": "",
         "attr_title": "",
         "description": "",

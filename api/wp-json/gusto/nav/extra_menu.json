@@ -7,80 +7,8 @@
         "post_parent": 0,
         "menu_order": 1,
         "menu_item_parent": "0",
-        "title": "Intrinsically Disordered Proteins",
-        "url": "https:\/\/peptone.io\/intrinsically-disordered-proteins\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 2060,
-        "post_title": "Bespoke Data for IDPs",
-        "post_excerpt": "",
-        "post_name": "2060",
-        "post_parent": 0,
-        "menu_order": 2,
-        "menu_item_parent": "0",
-        "title": "Bespoke Data for IDPs",
-        "url": "https:\/\/peptone.io\/unique-mass-spectrometry-system\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 2061,
-        "post_title": "Modelling of IDPs",
-        "post_excerpt": "",
-        "post_name": "2061",
-        "post_parent": 0,
-        "menu_order": 3,
-        "menu_item_parent": "0",
-        "title": "Modelling of IDPs",
-        "url": "https:\/\/peptone.io\/gpu-accelerated-data-analysis\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 2062,
-        "post_title": "Small Molecules for IDPs",
-        "post_excerpt": "",
-        "post_name": "2062",
-        "post_parent": 0,
-        "menu_order": 4,
-        "menu_item_parent": "0",
-        "title": "Small Molecules for IDPs",
-        "url": "https:\/\/peptone.io\/small-molecule-design-through-generative-ai\/",
-        "target": "",
-        "attr_title": "",
-        "description": "",
-        "classes": [
-            ""
-        ],
-        "xfn": ""
-    },
-    {
-        "ID": 2063,
-        "post_title": "Assays for IDPs",
-        "post_excerpt": "",
-        "post_name": "2063",
-        "post_parent": 0,
-        "menu_order": 5,
-        "menu_item_parent": "0",
-        "title": "Assays for IDPs",
-        "url": "https:\/\/peptone.io\/assay-development-and-efficacy-testing\/",
+        "title": "",
+        "url": "",
         "target": "",
         "attr_title": "",
         "description": "",
