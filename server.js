@@ -62,6 +62,6 @@ http.createServer((req, res, url, parts, data, verb)=>{
     // console.error(str='::ERROR:: '+err, [url])
     res.end(str)
   })
-}).listen(config.PORT, '0.0.0.0', _=>{
+}).listen(config.PORT, _=>{
   console.log(`Server listening on PORT ${config.PORT}`)
 })

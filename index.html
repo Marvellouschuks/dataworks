@@ -310,7 +310,7 @@ window.addEventListener('DOMContentLoaded', _=>{
     img.style.width='160px',
     el=document.querySelector('.draped'), [].forEach.call(a, (e, i)=>{
       if(!e) return;
-      e.replaceWith(img.cloneNode()), i&&el.classList.add('loaded')
+      e.replaceWith(img.cloneNode()), i&&(el.classList.add('loaded'), setTimeout(_=>document.title='Dataworks - Backend compute for businesses', 1e3))
     }),
     /*hide news section initially and onresize */
     (window.onresize=_=>itrvl=setInterval(_=>[0,1].forEach(n=>{
