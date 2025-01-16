@@ -310,11 +310,11 @@ window.addEventListener('DOMContentLoaded', _=>{
     img.style.width='160px',
     el=document.querySelector('.draped'), [].forEach.call(a, (e, i)=>{
       if(!e) return;
-      e.replaceWith(img.cloneNode()), i&&(el.classList.add('loaded'), setTimeout(_=>document.title='Dataworks - Backend compute for businesses', 1e3))
+      e.replaceWith(img.cloneNode()), i&&el.classList.add('loaded')
     }),
     /*hide news section initially and onresize */
-    (window.onresize=_=>itrvl=setInterval(_=>[0,1].forEach(n=>{
-      (news=document.querySelectorAll(`.c0${2114+n}`)).length&&
+    (window.onresize=_=>itrvl=setInterval(_=>['[data-stage="3"]', '.c02115'].forEach(str=>{
+      (news=document.querySelectorAll(str)).length&&
       (clearInterval(itrvl), news[news.length-1].classList.add('hidden'))
     }), 250))()
   }
