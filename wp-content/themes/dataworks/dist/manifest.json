@@ -1,0 +1,49 @@
+{
+  "icons": [
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_1024x1024.0c3662ebec571c94273b25795895f0e1.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_512x512.3daeacdb2e6956ed58e71b6c412a6372.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_384x384.de8bfabec1d91c2996f97223d39f473a.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_256x256.97071a09cd6f11e24ba7093eaf8f33f6.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_192x192.5c8ea3955be235e0d2d450c1982b0424.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_128x128.f10de728474b209bdb176178b85ad1a3.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/peptone/dist/icons/icon_96x96.1ffcc789571273ed19467d0f6dfaa48a.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "peptone",
+  "short_name": "peptone",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "Peptone Website",
+  "theme_color": "#2c2a32",
+  "background_color": "#ffffff",
+  "scope": "/"
+}
