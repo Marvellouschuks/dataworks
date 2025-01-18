@@ -13,6 +13,8 @@ module.exports = function(req, res) {
         "into": "#wpcf7-f187-o1",
         "invalid_fields": []
     };
+    console.log('::LOG CONFIG::', config)
+
     new Promise(res=>{
         // if(_wpcf7_recaptcha_response) 
             emailjs.send(config['SERVICE_ID'], config['TEMPLATE_ID'], {
