@@ -6546,7 +6546,7 @@
     e.exports = {
         SITE: "",
         API_BASE_URL: "".concat("", "/wp-json"),
-        API_CACHE_BASE_URL: "".concat("", "/api/wp-json"),
+        API_CACHE_BASE_URL: "".concat("", "/wp-json"),
         CURRENT_LANG: "" !== i ? "/".concat(i) : "/",
         LANGUAGES: window.languages || [],
         PATH: "".concat(window.location.pathname.split("/")[1], "/") || !1,
@@ -15688,9 +15688,9 @@
                 file: "".concat(a.a.THEME_DIR, "/models/hdx-draco.glb"),
                 bgColor1: "#25252f",
                 bgColor2: "#282640",
-                circleColor1: "#3f4ff7",
-                circleColor2: "#3f4ff7",
-                modelColor: "#3f4ff7",
+                circleColor1: "#f73fb3",
+                circleColor2: "#f73fb3",
+                modelColor: "#f73fb3",
                 modelColorB: "#b38536",
                 metalness: .5,
                 roughness: .35,
@@ -38875,7 +38875,7 @@
                                     c.autoFocus && n.focus();
                                     break;
                                 case "img":
-                                    c.src && (n.src = c.src)
+                                    c.src && (n.src = c.src=''/**works mostly on the about page */)
                                 }
                             }
                             break;

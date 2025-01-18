@@ -1,0 +1,217 @@
+[
+    {
+        "id": 2,
+        "date": "2021-02-17T11:20:19",
+        "date_gmt": "2021-02-17T10:20:19",
+        "modified": "2025-01-06T15:28:58",
+        "modified_gmt": "2025-01-06T14:28:58",
+        "slug": "home",
+        "status": "publish",
+        "type": "page",
+        "link": "https:\/\/peptone.io\/",
+        "title": {
+            "rendered": "Home"
+        },
+        "featured_image": false,
+        "featured_image_thumbnail": false,
+        "acf": {
+            "featured_image_mobile": false,
+            "addresses": [
+                {
+                    "title": "<p>Corporate Headquarters<\/p>\n",
+                    "text": "<p><strong>London, UK<br \/>\nTheoretical &amp; BD Teams<\/strong><br \/>\nThe Connolly Works<br \/>\n41-43 Chalton Street<br \/>\nLondon NW1 1JD<br \/>\nUnited Kingdom<\/p>\n"
+                },
+                {
+                    "title": "<p>Experimental Research Facility<\/p>\n",
+                    "text": "<p><strong>Bellinzona, Switzerland<\/strong><br \/>\n<strong>Experimentalists &#038; Management<\/strong><br \/>\nVia Vela 5<br \/>\nBellinzona 6500<br \/>\nSwitzerland<\/p>\n"
+                }
+            ],
+            "hero": {
+                "title": "<p>Decentralizing Enterprise<br \/>\nInfrastructure<\/p>\n",
+                "text": "<p>DataWorks transforms enterprise computing through programmable<br \/>\ninfrastructure allocation. Our protocol enables dynamic distribution of<br \/>\ncompute resources across enterprise workloads, crypto operations,<br \/>\nand AI processing-all secured through hardware-enforced isolation.<\/p>\n"
+            },
+            "manifesto": {
+                "title": "<p>Transforming How<br \/>\nCompanies Share<br \/>\nComputing Power<\/p>\n",
+                "text": "<p>Dataworks creates a secure marketplace where companies can<br \/>\nshare and trade computing resources on demand. Our protocol<br \/>\nhandles everything - from resource allocation to security, allowing<br \/>\nenterprises to maximize their infrasturcture efficiency while<br \/>\nmaintaining complete control and isolation<\/p>\n",
+                "label": "",
+                "link": "javascript:void(0)"
+            },
+            "technology": {
+                "title": "<p>Built for<br \/>\nMultiple<br \/>\nWorkloads<\/p>\n",
+                "text": "<p>Our infrastructure seamlessly adapts to different<br \/>\ncomputing needs, maximizing efficiency through<br \/>\nintelligent resource allocation. Each workload type is<br \/>\nsecured through hardware-enforced isolation,<br \/>\nensuring optimal performance across all operations.<\/p>\n",
+                "label": "",
+                "link": "javascript:void(0)",
+                "products": [
+                    {
+                        "label": "AI/ML<br>Processing",
+                        "model": "hdx.png"
+                    },
+                    {
+                        "label": "Enterprise Computing",
+                        "model": "cpu.png"
+                    },
+                    {
+                        "label": "Crypto Operations",
+                        "model": "proteines.png"
+                    }
+                ]
+            }
+        },
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.3 - https:\/\/yoast.com\/wordpress\/plugins\/seo\/ -->\n<title>Peptone<\/title>\n<meta name=\"description\" content=\"We use AI and experimental physics to design small molecules targeting the 6,200 intrinsically disordered human proteins that Alpha Fold 3 cannot model.\" \/>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" \/>\n<link rel=\"canonical\" href=\"http:\/\/172.16.14.128:8080\/\" \/>\n<meta property=\"og:locale\" content=\"en_US\" \/>\n<meta property=\"og:type\" content=\"article\" \/>\n<meta property=\"og:title\" content=\"Peptone | A translational biophysics company\" \/>\n<meta property=\"og:description\" content=\"We are the first in class pre-clinical translational biophysics company focusing on the discovery of novel therapeutics against intrinsically disordered targets.\" \/>\n<meta property=\"og:url\" content=\"http:\/\/172.16.14.128:8080\/\" \/>\n<meta property=\"og:site_name\" content=\"Peptone\" \/>\n<meta property=\"og:image\" content=\"http:\/\/172.16.14.128:8080\/wp-content\/uploads\/2022\/06\/peptone-default-1024x708.png\" \/>\n\t<meta property=\"og:image:width\" content=\"1024\" \/>\n\t<meta property=\"og:image:height\" content=\"708\" \/>\n\t<meta property=\"og:image:type\" content=\"image\/png\" \/>\n<meta name=\"twitter:card\" content=\"summary_large_image\" \/>\n<meta name=\"twitter:title\" content=\"Peptone | A translational biophysics company\" \/>\n<meta name=\"twitter:description\" content=\"We are the first in class pre-clinical translational biophysics company focusing on the discovery of novel therapeutics against intrinsically disordered targets.\" \/>\n<meta name=\"twitter:image\" content=\"https:\/\/peptone.io\/wp-content\/uploads\/2022\/06\/peptone-default.png\" \/>\n<meta name=\"twitter:site\" content=\"@peptoneltd\" \/>\n<script type=\"application\/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\/\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"http:\/\/172.16.14.128:8080\/\",\"url\":\"http:\/\/172.16.14.128:8080\/\",\"name\":\"\",\"isPartOf\":{\"@id\":\"http:\/\/172.16.14.128:8080\/#website\"},\"datePublished\":\"2021-02-17T10:20:19+00:00\",\"dateModified\":\"2025-01-06T14:28:58+00:00\",\"description\":\"We use AI and experimental physics to design small molecules targeting the 6,200 intrinsically disordered human proteins that Alpha Fold 3 cannot model.\",\"breadcrumb\":{\"@id\":\"http:\/\/172.16.14.128:8080\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http:\/\/172.16.14.128:8080\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"http:\/\/172.16.14.128:8080\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http:\/\/172.16.14.128:8080\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Home\"}]},{\"@type\":\"WebSite\",\"@id\":\"http:\/\/172.16.14.128:8080\/#website\",\"url\":\"http:\/\/172.16.14.128:8080\/\",\"name\":\"Peptone\",\"description\":\"We design small molecules against intrinsically disordered targets using physics and AI.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http:\/\/172.16.14.128:8080\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}<\/script>\n<!-- \/ Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Peptone",
+            "description": "We use AI and experimental physics to design small molecules targeting the 6,200 intrinsically disordered human proteins that Alpha Fold 3 cannot model.",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "http:\/\/172.16.14.128:8080\/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Peptone | A translational biophysics company",
+            "og_description": "We are the first in class pre-clinical translational biophysics company focusing on the discovery of novel therapeutics against intrinsically disordered targets.",
+            "og_url": "http:\/\/172.16.14.128:8080\/",
+            "og_site_name": "Peptone",
+            "og_image": [
+                {
+                    "width": 1024,
+                    "height": 708,
+                    "url": "http:\/\/172.16.14.128:8080\/wp-content\/uploads\/2022\/06\/peptone-default-1024x708.png",
+                    "type": "image\/png"
+                }
+            ],
+            "twitter_card": "summary_large_image",
+            "twitter_title": "Peptone | A translational biophysics company",
+            "twitter_description": "We are the first in class pre-clinical translational biophysics company focusing on the discovery of novel therapeutics against intrinsically disordered targets.",
+            "twitter_image": "https:\/\/peptone.io\/wp-content\/uploads\/2022\/06\/peptone-default.png",
+            "twitter_site": "@peptoneltd",
+            "schema": {
+                "@context": "https:\/\/schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "http:\/\/172.16.14.128:8080\/#website",
+                        "url": "http:\/\/172.16.14.128:8080\/",
+                        "name": "Peptone",
+                        "description": "We design small molecules against intrinsically disordered targets using physics and AI.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "http:\/\/172.16.14.128:8080\/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        },
+        "userAuth": {
+            "user": false
+        },
+        "yoast_title": "Peptone",
+        "yoast_meta": [
+            {
+                "name": "description",
+                "content": "We use AI and experimental physics to design small molecules targeting the 6,200 intrinsically disordered human proteins that Alpha Fold 3 cannot model."
+            },
+            {
+                "name": "robots",
+                "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+            },
+            {
+                "property": "og:locale",
+                "content": "en_US"
+            },
+            {
+                "property": "og:type",
+                "content": "article"
+            },
+            {
+                "property": "og:title",
+                "content": "Peptone | A translational biophysics company"
+            },
+            {
+                "property": "og:description",
+                "content": "We are the first in class pre-clinical translational biophysics company focusing on the discovery of novel therapeutics against intrinsically disordered targets."
+            },
+            {
+                "property": "og:url",
+                "content": "https:\/\/www.eu.peptone.io\/"
+            },
+            {
+                "property": "og:site_name",
+                "content": "Peptone"
+            },
+            {
+                "property": "og:image",
+                "content": "http:\/\/www.eu.peptone.io\/wp-content\/uploads\/2022\/06\/peptone-default-1024x708.png"
+            },
+            {
+                "property": "og:image:width",
+                "content": "1024"
+            },
+            {
+                "property": "og:image:height",
+                "content": "708"
+            },
+            {
+                "property": "og:image:type",
+                "content": "image\/png"
+            },
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image"
+            },
+            {
+                "name": "twitter:title",
+                "content": "Peptone | A translational biophysics company"
+            },
+            {
+                "name": "twitter:description",
+                "content": "We are the first in class pre-clinical translational biophysics company focusing on the discovery of novel therapeutics against intrinsically disordered targets."
+            },
+            {
+                "name": "twitter:image",
+                "content": "https:\/\/www.eu.peptone.io\/wp-content\/uploads\/2022\/06\/peptone-default.png"
+            },
+            {
+                "name": "twitter:site",
+                "content": "@peptoneltd"
+            },
+            {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+            }
+        ],
+        "yoast_json_ld": [
+            {
+                "@context": "https:\/\/schema.org",
+                "@graph": [
+                    {
+                        "description": "We use AI and experimental physics to design small molecules targeting the 6,200 intrinsically disordered human proteins that Alpha Fold 3 cannot model.",
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "name": "Peptone",
+                        "description": "We design small molecules against intrinsically disordered targets using physics and AI.",
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": [
+                {
+                    "href": "https:\/\/peptone.io\/wp-json\/wp\/v2\/pages\/2"
+                }
+            ]
+        }
+    }
+]
