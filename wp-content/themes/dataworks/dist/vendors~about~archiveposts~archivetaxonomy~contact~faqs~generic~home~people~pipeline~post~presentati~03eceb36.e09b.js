@@ -989,7 +989,7 @@
                 if (window.getComputedStyle) {
                     var i = getComputedStyle(t)
                       , s = i.transform || i.webkitTransform || i.mozTransform
-                      , n = s.match(/^matrix3d\((.+)\)$/);
+                      , n = s?.match(/^matrix3d\((.+)\)$/);
                     return n ? (e.x = n ? parseFloat(n[1].split(", ")[12]) : 0,
                     e.y = n ? parseFloat(n[1].split(", ")[13]) : 0) : (n = s.match(/^matrix\((.+)\)$/),
                     e.x = n ? parseFloat(n[1].split(", ")[4]) : 0,

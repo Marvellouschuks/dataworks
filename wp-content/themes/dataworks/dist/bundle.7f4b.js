@@ -18792,6 +18792,7 @@
                             i();
                         else {
                             var b = function(e) {
+                                /*optimize using captcha scripts only on the contact page*/
                                 return "https://www." + (e.useRecaptchaNet ? "recaptcha.net" : "google.com") + "/recaptcha/" + (e.useEnterprise ? "enterprise.js" : "api.js")
                             }({
                                 useEnterprise: a,
