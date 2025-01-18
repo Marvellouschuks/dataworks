@@ -31,12 +31,12 @@ let http   = require('http'),
     },
     cache  = {}; /** to store the strings of data read from files */
 
-http.createServer((req, res, url, parts, data, verb)=>{
+http.createServer((req, res, url, parts, data)=>{
   ({ url } = parts =  urlParts(req.url)),
   parts.url = url=url.replace('undefined', '187'), // provide the appropriate path in lieu of undefined for request on the contact page
 
   res.json=obj=>res.end(JSON.stringify(obj)), // for Vercel functions
-  data = jobs[verb=req.method](req, res, parts),
+  data = jobs[req.method.toUpperCase()](req, res, parts),
   /\/$/.test(url) && (url=path.join(url,'index.html')),
   
   data || new Promise((resolve, rej, cached)=>{
