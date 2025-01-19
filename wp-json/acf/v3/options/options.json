@@ -7,7 +7,7 @@
         "cookies_short_text": "This site uses profiling cookies. ",
         "footer_string_1": "\u00a9 Dataworks Ltd | Backend compute for businesses(2024)",
         "load_more_label": "Load More",
-        "menu_footer": "<p>Follow our journey and join the conversation on\u00a0<a href=\"javascript:void(0)\">ico-telegram<\/a> <a href=\"javascript:void(0)\">ico-twitter<\/a><br \/>\nFor press enquires please contact us at <a href=\"javascript:void(0)\">hello@dataworks.com<\/a><\/p>\n",
+        "menu_footer": "<p>Follow our journey and join the conversation on\u00a0<a href=\"javascript:void(0)\"><img style='display:inline-block' src='/wp-content/themes/dataworks/images/telegram.svg'><\/a> <a href=\"javascript:void(0)\"><img style='display:inline-block' src='/wp-content/themes/dataworks/images/x-twitter.svg'><\/a><br \/>\nFor press enquires please contact us at <a href=\"javascript:void(0)\">mail@mail.com<\/a><\/p>\n",
         "read_more_label": "Read more",
         "site_title": "Dataworks - Backend compute for businesses",
         "technology_link": ""

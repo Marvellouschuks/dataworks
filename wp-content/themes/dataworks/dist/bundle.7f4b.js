@@ -53245,7 +53245,7 @@
       , ps = n(75)
       , hs = Object(s.b)(ds)
       , vs = function(e, t) {
-        if ("tag" === e.type && "a" === e.name && e.children[0].data.startsWith("ico"))
+        if ("tag" === e.type && "a" === e.name && e.children[0].data?.startsWith("ico"))
             return Object(B.jsx)("a", {
                 href: e.attribs.href,
                 children: Object(B.jsx)("svg", {
