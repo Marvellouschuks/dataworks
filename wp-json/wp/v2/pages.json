@@ -38,7 +38,7 @@
             },
             "technology": {
                 "title": "<p>Built for<br \/>\nMultiple<br \/>\nWorkloads<\/p>\n",
-                "text": "<p>Our infrastructure seamlessly adapts to different<br \/>\ncomputing needs, maximizing efficiency through<br \/>\nintelligent resource allocation. Each workload type is<br \/>\nsecured through hardware-enforced isolation,<br \/>\nensuring optimal performance across all operations.<\/p>\n",
+                "text": "<p>High-performance compute resources for machine<br \/>\nlearning and AI model training. Burst capacity for<br \/>\nintensive workloads. Access cutting-edge GPU<br \/>\nclusters and distributed computing frameworks<br \/>\noptimized for deep learning, with automated scaling<br \/>\nto handle varying training demands and dataset sizes.<\/p>\n",
                 "label": "",
                 "link": "javascript:void(0)",
                 "products": [
@@ -47,11 +47,11 @@
                         "model": "hdx.png"
                     },
                     {
-                        "label": "Enterprise Computing",
+                        "label": "Enterprise<br>Computing",
                         "model": "cpu.png"
                     },
                     {
-                        "label": "Crypto Operations",
+                        "label": "Crypto<br>Operations",
                         "model": "proteines.png"
                     }
                 ]
