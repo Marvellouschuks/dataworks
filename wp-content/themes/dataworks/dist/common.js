@@ -16,7 +16,7 @@
   }
   /**perpetual listener to setup the community page after back-forward navigations to and from it*/
   loop(_=>(loader=qS('.c022'))&&(/community/.test(location.pathname)?(page=qS('.page'))&&community()
-    :asBg&&(loader.classList.add('duration-300', 'ease-out'), loader.style.opacity='0', draped?.classList.add('loaded')))),
+    :asBg&&(loader.classList.add('duration-300', 'ease-out'), loader.style.opacity='0', loader.ontransitionend=_=>draped?.classList.add('loaded')))),
 
   window.addEventListener('DOMContentLoaded', _=>{
     DOMLoaded=!0;
@@ -65,6 +65,7 @@
     function about(){
       loop((itrvl,ch)=>{ (ch=qS('.route-container>div')?.children)?.length&&(
         clearInterval(itrvl), qS(ch[0],'div').remove(), ch[1].remove(),
+        console.log('::ABOUT::', [location.pathname]),
         fetch('page.html').then(res=>res.text()).then(html=>ch[0].innerHTML=html)
       )})
     }
