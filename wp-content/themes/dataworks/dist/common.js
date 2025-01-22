@@ -47,19 +47,20 @@
       toText=(index, clear)=>{
         if(!el) return;
         let lines=qS(el,'.line',!0),bool,
-        txt=(line, flag)=>{ if(!line) return; (line=line.firstElementChild).classList.add('duration-700', 'ease-out'), line.style.transform=`translate(0px, ${flag?12:''}0%)` },
+        txt=(line, flag)=>{ if(!line) return; (line=line.firstElementChild).classList.add('duration-500', 'ease-out'), line.style.transform=`translate(0px, ${flag?7:''}0%)` },
         texts=txts[index].split(/\n/), once, asTxt=cb=>texts.forEach((text,i)=>lines[i].firstElementChild.textContent=(cb&&cb(lines[i]), text));
-        index||asTxt(), texts.forEach((_,i,el)=>{
+        if(clear) return asTxt();
+        texts.forEach((_,i,el)=>{
           txt(lines[i],!0),/**translate the lines out of view */
           lines[i].firstElementChild.ontransitionend=ev=>{
             if(reset) return;
             once||=!asTxt(line=>txt(line)/**translate the lines into view */)
           }
         })
-      }, /about/.test(path=location.pathname)?done||=!about():done=0,
-      path==='/'&&(/built for/i.test((el=qS('.c02132'))?.textContent) ? (reset&&toText(0),/**reset after navigating to section*/ btns=qS(el,'button',!0),
-        el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
-        : (reset=!0))
+      }, /about/.test(path=location.pathname)?done||=!about():done=0;
+      if(path==='/') (/built for/i.test((el=qS('.c02132'))?.textContent)
+        ? (reset&&toText(0, !0),/**reset after navigating to section*/ btns=qS(el,'button',!0), el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
+        : (reset=!0));
     });
     function about(){
       loop((itrvl,ch)=>{ (ch=qS('.route-container>div')?.children)?.length&&(
