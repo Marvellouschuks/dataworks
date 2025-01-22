@@ -1,9 +1,9 @@
 (function(){
   function loop(cb) {
-    let interval=setInterval(_=>cb(interval), 300)
+    let interval=setInterval(_=>cb(interval), 0)
   }
 
-  let asBg=/background/.test(location.search), draped, path=location.pathname, DOMLoaded, slice=(arg, ...n)=>[].slice.call(arg, ...n), qS=(el,str,all,res)=>(typeof str==='boolean'&&(all=str), typeof el=='string'&&(str=el,el=0), res=(el||document)['querySelector'+'All'.repeat(all)](str),all?slice(res):res),
+  let entry, asBg=/background/.test(location.search), draped, path=location.pathname, DOMLoaded, slice=(arg, ...n)=>[].slice.call(arg, ...n), qS=(el,str,all,res)=>(typeof str==='boolean'&&(all=str), typeof el=='string'&&(str=el,el=0), res=(el||document)['querySelector'+'All'.repeat(all)](str),all?slice(res):res),
   busy, page, loader;
   function community() {
     if(busy) return;
@@ -14,27 +14,41 @@
       page.parentNode.innerHTML = html, page.remove()
     })
   }
-  /**perpetual listener to setup the community page after back-forward navigations to and from it*/
-  loop(_=>(loader=qS('.c022'))&&(/community/.test(location.pathname)?(page=qS('.page'))&&community()
-    :asBg&&(loader.classList.add('duration-300', 'ease-out'), loader.style.opacity='0', loader.ontransitionend=_=>draped?.classList.add('loaded')))),
 
+  function about(){
+    if(busy) return;
+    if(!entry[0].firstElementChild.parentNode) return;
+    busy=!0, fetch('page.html').then(res=>res.text()).then(html=>{
+      qS(entry[0],'div').remove(), entry[1].remove(),
+      entry[busy=0].innerHTML=html
+    })
+  }
+  let loaded, lds=[], nav_btns, frame;
+  /**perpetual listener to setup the pages tested for  after back-forward navigations to and from them*/
+  loop(_=>{
+    ((lds[0]=loader=qS('.c022'))&&[0,4].forEach((n,i)=>lds[++i]=qS(lds[0], `.c0${n+23}`)), loader)&&(/community/.test(location.pathname)
+    ? (page=qS('.page'))&&community()
+    : (asBg&&(loader.style.opacity='0'),
+      /about/.test(location.pathname)&&((entry=qS('.route-container>div')?.children)?.length&&qS(entry[0],'div')&&about(),
+      (frame=qS('iframe')?.contentDocument)&&(nav_btns=qS(frame, 'button.c02124',!0))[3]&&nav_btns[3].click(),
+      loaded||(lds.forEach(ld=>ld.classList.add('persist','duration-700')), nav_btns&&(loaded=nav_btns[3])&&setTimeout(_=>lds.forEach(ld=>ld.classList.remove('persist')), 1e3))
+    )||(loaded=0)))
+  }),
   window.addEventListener('DOMContentLoaded', _=>{
     DOMLoaded=!0;
-    let img=new Image(), loaded, a, nav_btns;
+    let img=new Image(), loaded, a;
     loop(itrvl=>{ (a=qS('a.c0210 svg',!0)).length&&(clearInterval(itrvl), img.onload()) }),
     img.src='/wp-content/themes/dataworks/images/DataWorks.svg', img.onload=(news)=>{
       if(!a?.length||loaded) return;
       loaded=!0, img.style.width='150px',
       draped=qS('.draped'), [].forEach.call(a, (e, i)=>{
         if(!e) return;
-        e.replaceWith(img.cloneNode()), i&&(asBg||draped.classList.add('loaded'))
+        e.replaceWith(img.cloneNode()), i&&draped.classList.add('loaded')
       }),
       /*hide news section initially and onresize for the home page */
-      (window.onresize=_=>loop(itrvl=>['.c02151'].concat(asBg?'.c02119':[])
-        .forEach(str=>(news=qS(str,!0)).length
-        &&(nav_btns=qS('button.c02124',!0))[3]&&(asBg?!nav_btns[3].click():!0)
-        &&(clearInterval(itrvl), news[news.length-1].classList.add('hidden')))
-      ))()
+      (window.onresize=_=>loop(itrvl=>{['.c02151'].concat(asBg?'.c02119':[])
+        .forEach(str=>(news=qS(str,!0)).length&&(clearInterval(itrvl), news[news.length-1].classList.add('hidden')))
+      }))()
     }
   });
     /**a listener to detect URL changes for the about page*/
@@ -57,16 +71,9 @@
             once||=!asTxt(line=>txt(line)/**translate the lines into view */)
           }
         })
-      }, /about/.test(path=location.pathname)?done||=!about():done=0;
+      };
       if(path==='/') (/built for/i.test((el=qS('.c02132'))?.textContent)
         ? (reset&&toText(0, !0),/**reset after navigating to section*/ btns=qS(el,'button',!0), el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
         : (reset=!0));
     });
-    function about(){
-      loop((itrvl,ch)=>{ (ch=qS('.route-container>div')?.children)?.length&&(
-        clearInterval(itrvl), qS(ch[0],'div').remove(), ch[1].remove(),
-        console.log('::ABOUT::', [location.pathname]),
-        fetch('page.html').then(res=>res.text()).then(html=>ch[0].innerHTML=html)
-      )})
-    }
   })()
