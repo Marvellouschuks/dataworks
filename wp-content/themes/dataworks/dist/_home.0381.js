@@ -20091,8 +20091,18 @@
                 37 !== g.which && 38 !== g.which || sg(Math.max(0, D - 1)),
                 39 !== g.which && 40 !== g.which || sg(Math.min(3, D + 1))
             };
+            
             Object(o.useEffect)((function() {
-                return window.addEventListener("keydown", dg),
+                window.onkeydown=ev=>{
+                  if(location.pathname!=='/') return;/**only allow on the home page */
+                  let btns=document.querySelectorAll('button.c02124'), { code }=ev;
+                  /arrow(left|up)/i.test(code)&&(window.atPageEnd&&=btns[1].click()), /**set to a falsy if once true */
+                  window.__code=code
+                },
+                /**the heuristics in the body of the function "dg" require that it is
+                 * passed as a callback and not invoked, hence the code below*/
+                window.__misc={get fxn(){ return window.atPageEnd&&window.__code==='ArrowDown'?_=>_:dg }};
+                return window.addEventListener("keydown", window.__misc.fxn),
                 function() {
                     window.removeEventListener("keydown", dg)
                 }
@@ -20232,7 +20242,7 @@
                     }, K.root, !0), K.isMobile, V.isMobile || V.isTablet)),
                     ref: Q,
                     children: [L && Object(Y.jsx)(S.a, {
-                        title: cg.title?.rendered,
+                        title: cg.title.rendered,
                         meta: cg.yoast_meta,
                         schema: cg.yoast_json_ld
                     }), L && Object(Y.jsxs)(Y.Fragment, {
@@ -20280,7 +20290,7 @@
                                 Jg = null === (fg = cg.acf) || void 0 === fg ? void 0 : fg.news?.news.map((function(g) {
                                     var I;
                                     return {
-                                        title: g.title?.rendered,
+                                        title: g.title.rendered,
                                         link: g.link,
                                         image: null === (I = g.featured_image) || void 0 === I ? void 0 : I.src
                                     }
@@ -21604,7 +21614,7 @@
                     }, p.root, !0), p.isMobile, m.isMobile || m.isTablet)),
                     ref: R,
                     children: [v && Object(Y.jsx)(S.a, {
-                        title: gg.title?.rendered,
+                        title: gg.title.rendered,
                         meta: gg.yoast_meta,
                         schema: gg.yoast_json_ld
                     }), v && Object(Y.jsxs)(Y.Fragment, {
@@ -21678,7 +21688,7 @@
                                     vg = null === (yg = gg.acf) || void 0 === yg ? void 0 : yg.news?.news.map((function(g) {
                                         var I;
                                         return {
-                                            title: g.title?.rendered,
+                                            title: g.title.rendered,
                                             link: g.link,
                                             image: null === (I = g.featured_image) || void 0 === I ? void 0 : I.src
                                         }

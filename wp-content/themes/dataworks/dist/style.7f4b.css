@@ -1,3 +1,27 @@
+@media (max-height: 650px) {
+  .hero__title {
+      font-size: 53px !important;
+  }
+}
+/*contact page header*/
+.header-font {
+    font-family: Albra-sans-light, serif;
+}
+.draped {
+  background:#2c2a32;
+  position:fixed;
+  top:0;left:0;bottom:0;right:0;
+  z-index:6;
+  display: flex; align-items: center;justify-content: center;flex-direction: column;
+}
+.draped.loaded {
+  transition: opacity 0.4s ease-out, visibility 0s 0.4s;
+  opacity: 0;visibility:hidden;pointer-events:none;
+}
+.hidden {
+  display: none;
+}
+
 @media (min-width:1024px) {
     button.c0252 {
         display: none;

@@ -170,19 +170,13 @@
         <!-- End Google Tag Manager -->
         <link href='/wp-content/themes/dataworks/dist/style.7f4b.css' rel='stylesheet'>
         <link href='/wp-content/themes/dataworks/dist/tailwind.min.css' rel='stylesheet'>
+        <script src="/wp-content/themes/dataworks/dist/common.js"></script>
     </head>
     <body>
-        <style id='draped'>
-            @media (min-width:1085px) {
-              .large\:opacity-100 {
-                opacity:1;
-              }
-            }
-          </style>
-          <div class="draped"></div>
+        
+        <div class="draped"></div>
         <div id="root"></div>
         <div id="page" class="site">
-            <p>This is a placeholder text that should show on the about page</p>
             <div id="content" class="site-content">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
@@ -316,6 +310,10 @@
                 "cpt": "contact",
                 "slug": "contact-us"
             }, {
+                "cpt": "community",
+                "slug": "community",
+                "rewrite":"community"
+            }, {
                 "cpt": "archive_post",
                 "slug": "news"
             }, {
@@ -381,7 +379,6 @@
             }];
             window.languages = ["en"];
         </script>
-        <script src="/wp-content/themes/dataworks/dist/common.js"></script>
         <script data-consent="ignore" src="/wp-content/themes/dataworks/dist/bundle.7f4b.js"></script>
     </body>
 </html>

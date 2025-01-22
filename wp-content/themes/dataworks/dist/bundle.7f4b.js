@@ -3675,9 +3675,9 @@
         var t = void 0 === e ? {} : e
           , n = t.connectHOC
           , r = void 0 === n ? k : n
-          , i = t.mapStateToPropsFactories
+          , i = t?.mapStateToPropsFactories
           , o = void 0 === i ? R : i
-          , a = t.mapDispatchToPropsFactories
+          , a = t?.mapDispatchToPropsFactories
           , s = void 0 === a ? L : a
           , u = t.mergePropsFactories
           , c = void 0 === u ? N : u
@@ -6726,7 +6726,7 @@
             return e;
         var n = Array.isArray(e) ? e : Array(e)
           , i = n.reduce((function(e, n) {
-            return e.concat(t.map((function(e) {
+            return e.concat(t?.map((function(e) {
                 return "/".concat(e).concat(n)
             }
             )))
@@ -12904,7 +12904,7 @@
                         return r.apply(void 0, arguments)
                     }
                 }
-                  , s = t.map((function(e) {
+                  , s = t?.map((function(e) {
                     return e(i)
                 }
                 ));
@@ -13012,7 +13012,7 @@
                             c.b.get("".concat(d.API.PAGE, "?slug=").concat(e));
                         case 3:
                             if (i = n.sent,
-                            o = i.data[0].id,
+                            o = i.data[0]?.id,
                             n.t0 = t,
                             !n.t0) {
                                 n.next = 10;
@@ -23089,7 +23089,7 @@
                     var t = e || Dn();
                     Gr.cssShadowPiercingDeepCombinator || (t = t.slice(-1));
                     var n = [].slice.call(document.querySelectorAll($r), 0)
-                      , r = t.map((function(e) {
+                      , r = t?.map((function(e) {
                         return Gt({
                             context: e
                         })
@@ -43257,7 +43257,7 @@
         },
         getOuterHTML: i,
         getText: function e(t) {
-            return Array.isArray(t) ? t.map(e).join("") : o(t) ? "br" === t.name ? "\n" : e(t.children) : t.type === r.CDATA ? e(t.children) : t.type === r.Text ? t.data : ""
+            return Array.isArray(t) ? t?.map(e).join("") : o(t) ? "br" === t.name ? "\n" : e(t.children) : t.type === r.CDATA ? e(t.children) : t.type === r.Text ? t.data : ""
         }
     }
 }
@@ -44362,7 +44362,7 @@
             var o = n.toLowerCase()
               , a = i.default[o] || o;
             return t[a] = function(e, t) {
-                r.default.map((function(e) {
+                r.default?.map((function(e) {
                     return e.toLowerCase()
                 }
                 )).indexOf(e.toLowerCase()) >= 0 && (t = e);
@@ -47966,7 +47966,7 @@
         },
         getAnimatableNone: function(e) {
             var t = $e.parse(e);
-            return $e.createTransformer(e)(t.map(Qe))
+            return $e.createTransformer(e)(t?.map(Qe))
         }
     }
       , Ze = function(e) {
@@ -49162,7 +49162,7 @@
             }
             ))
         }(o);
-        var s = t.map((function(e, t) {
+        var s = t?.map((function(e, t) {
             return or({
                 from: o[t],
                 to: o[t + 1],
@@ -49177,7 +49177,7 @@
                 var r = e.length
                   , i = r - 1
                   , o = i - 1
-                  , a = t.map((function(e) {
+                  , a = t?.map((function(e) {
                     return e.start(n)
                 }
                 ));
@@ -51985,7 +51985,7 @@
                 }, e)
             }
             )));
-        for (var h = ae(l), v = f.current.map(va), g = l.map(va), m = v.length, y = 0; y < m; y++) {
+        for (var h = ae(l), v = f.current?.map(va), g = l.map(va), m = v.length, y = 0; y < m; y++) {
             var b = v[y];
             -1 === g.indexOf(b) ? p.add(b) : p.delete(b)
         }
@@ -52274,7 +52274,7 @@
                     width: o.header.logo.width,
                     height: o.header.logo.height,
                     children: [Object(B.jsx)("title", {
-                        children: "".concat(a.site_title, " Logo")
+                        children: "".concat(a?.site_title, " Logo")
                     }), Object(B.jsx)("path", {
                         d: "M24.2 28.2l4.6-2.7-4.6-2.6-4.6 2.6zM24.2 38.5l2.8-1.6-2.8-1.6-2.7 1.6zM14.4 32.8l2.8-1.6-2.8-1.6-2.7 1.6zM4.6 27.9l4.1-2.4-4.1-2.3-4.1 2.3zM14.4 44.1l2.8-1.6-2.8-1.6-2.7 1.6zM4.6 39.2l4-2.3-4-2.4-4 2.4zM4.6 16.9l4.6-2.7-4.6-2.7L0 14.2zM14.4 11.2L19 8.6l-4.6-2.7-4.6 2.6zM24.3 5.5l4.6-2.6L24.2.2l-4.6 2.7zM14.4 22.5l4.6-2.6-4.6-2.7-4.6 2.7zM24.3 15.8l2.7-1.6-2.8-1.6-2.7 1.6zM34.1 10.8l3.8-2.2L34 6.3l-3.8 2.2zM34.1 22.5l4.6-2.6-4.7-2.7-4.6 2.7zM43.9 16.9l4.6-2.7-4.6-2.7-4.6 2.7z"
                     }), Object(B.jsx)("path", {
@@ -52749,7 +52749,7 @@
         var H = Object(j.useCallback)((function() {
             return Object(B.jsx)("ul", {
                 className: D()(N()(N()({}, L.headerNav, !0), L.hide, k)),
-                children: t.map((function(e) {
+                children: t?.map&&t.map((function(e) {
                     return e.classes.includes("btn") ? Object(B.jsx)("li", {
                         children: Object(B.jsx)(Ba.a, {
                             link: e.url,
@@ -52790,7 +52790,7 @@
                                     "" === u && x.goBack()
                                 },
                                 className: L.back,
-                                children: A.back_label
+                                children: A?.back_label
                             })
                         }), Object(B.jsx)("button", {
                             className: D()(N()(N()({}, L.burgerButton, !0), "isMenuOpen", k)),
@@ -53394,7 +53394,7 @@
                     "data-footer-nav": !0,
                     children: Object(B.jsx)("div", {
                         className: s.footerNav,
-                        children: as()(p.menu_footer, {
+                        children: as()(p?.menu_footer, {
                             transform: vs
                         })
                     })
@@ -53712,12 +53712,12 @@
                         }), Object(B.jsx)("h2", {
                             className: f.title,
                             dangerouslySetInnerHTML: {
-                                __html: n.title.rendered
+                                __html: n.title?.rendered
                             }
                         }), Object(B.jsx)("p", {
                             className: f.text,
                             dangerouslySetInnerHTML: {
-                                __html: n.content.rendered
+                                __html: n.content?.rendered
                             }
                         }), n.acf.page_builder && n.acf.page_builder.map((function(e, t) {
                             if ("text_section" === e.acf_fc_layout)
@@ -54004,7 +54004,7 @@
                         return Object(B.jsx)("li", {
                             children: Object(B.jsx)("button", {
                                 dangerouslySetInnerHTML: {
-                                    __html: "<small>".concat(n + 1, '<svg viewBox="0 0 80 80"><path d="M75.8 40L57.9 9H22.1L4.2 40l17.9 31h35.8z" /></svg></small> ').concat(e.title.rendered)
+                                    __html: "<small>".concat(n + 1, '<svg viewBox="0 0 80 80"><path d="M75.8 40L57.9 9H22.1L4.2 40l17.9 31h35.8z" /></svg></small> ').concat(e.title?.rendered)
                                 },
                                 onClick: function() {
                                     return t(n + 1)

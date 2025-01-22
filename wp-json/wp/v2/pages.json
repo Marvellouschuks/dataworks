@@ -17,18 +17,12 @@
         "acf": {
             "featured_image_mobile": false,
             "addresses": [
-                {
-                    "title": "<p>Corporate Headquarters<\/p>\n",
-                    "text": "<p><strong>London, UK<br \/>\nTheoretical &amp; BD Teams<\/strong><br \/>\nThe Connolly Works<br \/>\n41-43 Chalton Street<br \/>\nLondon NW1 1JD<br \/>\nUnited Kingdom<\/p>\n"
-                },
-                {
-                    "title": "<p>Experimental Research Facility<\/p>\n",
-                    "text": "<p><strong>Bellinzona, Switzerland<\/strong><br \/>\n<strong>Experimentalists &#038; Management<\/strong><br \/>\nVia Vela 5<br \/>\nBellinzona 6500<br \/>\nSwitzerland<\/p>\n"
-                }
+                
             ],
             "hero": {
                 "title": "<p>Decentralizing Enterprise<br \/>\nInfrastructure<\/p>\n",
-                "text": "<p>DataWorks transforms enterprise computing through programmable<br \/>\ninfrastructure allocation. Our protocol enables dynamic distribution of<br \/>\ncompute resources across enterprise workloads, crypto operations,<br \/>\nand AI processing-all secured through hardware-enforced isolation.<\/p>\n"
+                "text": "<p>DataWorks transforms enterprise computing through programmable<br \/>\ninfrastructure allocation. Our protocol enables dynamic distribution of<br \/>\ncompute resources across enterprise workloads, crypto operations,<br \/>\nand AI processing-all secured through hardware-enforced isolation.<\/p>\n",
+                "label": ""
             },
             "manifesto": {
                 "title": "<p>Transforming How<br \/>\nCompanies Share<br \/>\nComputing Power<\/p>\n",
@@ -55,8 +49,16 @@
                         "model": "proteines.png"
                     }
                 ]
-            }
-        },
+            },
+          "news": {
+          "pretitle": "",
+          "title": "\u003Cp\u003EData Token\u003C/p\u003E\n",
+          "text": "",
+          "label": "",
+          "link": "",
+          "news": []
+        }
+      },
         "yoast_head": "",
         "yoast_head_json": {
             "title": "Dataworks",

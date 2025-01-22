@@ -1,0 +1,125 @@
+[
+    {
+        "id": 3,
+        "date": "2021-02-17T11:20:19",
+        "date_gmt": "2021-02-17T10:20:19",
+        "guid": {
+            "rendered": ""
+        },
+        "modified": "2022-06-12T21:23:21",
+        "modified_gmt": "2022-06-12T19:23:21",
+        "slug": "privacy-policy",
+        "status": "publish",
+        "type": "page",
+        "link": "\/privacy-policy\/",
+        "title": {
+            "rendered": "Privacy policy"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 3,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false,
+            "footnotes": ""
+        },
+        "featured_image": false,
+        "featured_image_thumbnail": false,
+        "acf": {
+            "featured_image_mobile": false,
+            "page_builder": [
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h1>Privacy Policy<\/h1>\n<p>Last updated: May 22, 2022<\/p>\n<p>By submitting the contact form, you acknowledge and agree to the following privacy terms:<\/p>\n"
+                },
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h2>Information Collection and Use<\/h2>\n<p>When you submit this form, DataWorks collects and stores the information you provide, which may include:<\/p>\n<ul>\n<li>Your name<\/li>\n<li>Email address<\/li>\n<li>Phone number<\/li>\n<li>Message content<\/li>\n<li>Any additional information you choose to share<\/li>\n<\/ul>"
+                },
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h2>Purpose and Processing<\/h2>\n<p>We use this information solely to:<\/p>\n<ul>\n<li>Respond to your inquiry or request<\/li>\n<li>Maintain a record of our communications<\/li>\n<li>Improve our customer service<\/li>\n<li>Contact you regarding your submission<\/li>\n<\/ul>\n"
+                },
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h2>Data storage and Security<\/h2>\n<ul>\n<li>Your information is stored on our protected servers<\/li>\n<li>We implement appropriate technical and organizational measures to protect your data<\/li>\n<li>We retain your information only for as long as necessary to fulfill the purposes outlined in this policy<\/li>\n<\/ul>\n"
+                },
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h2>Information Sharing<\/h2>\n<ul>\n<li>We do not sell, rent or trade your personal information to third parties<\/li>\n<li>Your information may be accessed by authorized DataWorks employees only as necessary to respond to your inquiry<\/li>\n<li>We may share your information if required by law or to protect our legal rights<\/li>\n<\/ul>\n"
+                },
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h2>Your Rights<\/h2>\n<p>You have the right to:<\/p>\n<ul>\n<li>Request access to your personal data<\/li>\n<li>Request correction of inaccurate data<\/li>\n<li>Request deletion of your data<\/li>\n<li>Withdraw your consent at any time<\/li>\n<li>Lodge a complaint with a supervisory authority<\/li>\n<\/ul>\n"
+                }
+            ],
+            "hero": {
+                "payoff": ""
+            },
+            "related": {
+                "related": {
+                    "code": "rest_no_route",
+                    "message": "No route was found matching the URL and request method.",
+                    "data": {
+                        "status": 404
+                    }
+                }
+            },
+            "banner": {
+                "title": "",
+                "text": "",
+                "label": "",
+                "link": "",
+                "image": false
+            }
+        },
+        "yoast_head_json": {
+            "title": "Peptone",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "\/privacy-policy\/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_url": "\/privacy-policy\/",
+            "og_site_name": "Peptone",
+            "twitter_card": "summary_large_image",
+            "twitter_site": "@peptoneltd",
+            "schema": {
+                "@context": "https:\/\/schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "@id": "\/privacy-policy\/",
+                        "url": "\/privacy-policy\/",
+                        "name": "",
+                        "isPartOf": {
+                            "@id": "http:\/\/172.16.14.128:8080\/#website"
+                        },
+                        "datePublished": "2021-02-17T10:20:19+00:00",
+                        "dateModified": "2022-06-12T19:23:21+00:00",
+                        "breadcrumb": {
+                            "@id": "\/privacy-policy\/#breadcrumb"
+                        },
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        }
+    }
+]

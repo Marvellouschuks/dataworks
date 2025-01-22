@@ -44,7 +44,7 @@
         "menu_order": 1,
         "menu_item_parent": "0",
         "title": "Community",
-        "url": "javascript:void(0)",
+        "url": "/community/",
         "target": "",
         "attr_title": "",
         "description": "",
