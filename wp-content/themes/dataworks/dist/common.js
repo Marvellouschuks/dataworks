@@ -51,9 +51,9 @@
     /*hide news section initially and onresize for the home page */
     (window.onresize=_=>loop((itrvl, el, rmv=[])=>{
       (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'), asBg||(rmv[1]=null), rmv.forEach(n=>n&&n.classList.add('hidden'))),
-      asBg||(el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
+      asBg||/\//.test(location.pathname)&&(el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
       .then(html=>{
-        el.innerHTML+=html, animations.addRippleAnimations(), busy=0, el.nextElementSibling?.remove(),
+        el.innerHTML+=html, busy=0, el.nextElementSibling?.remove(),
         el.parentNode.style.display='block'
       }))
     }))()
@@ -64,10 +64,10 @@
       "Secure hosting for business-critical applications\nand data processing. Guaranteed uptime with dedicated\nresources. Our enterprise-grade infrastructure\nensures seamless scalability and\ncompliance with industry standards, while dedicated\nsupport teams provide 24/7 monitoring and incident response.",
       "Optimized infrastructure for blockchain operations,\nvalidator nodes, and mining. Dynamic allocation based\non market conditions. Our specialized hardware\nconfigurations maximize hash rates while\nminimizing energy consumption, supported by\nredundant power systems and low-latency network connections to major crypto networks."
     ],
-    first, socials = document.createElement('div'); props={className:'socials space-x-6 mt-10', 'innerHTML':`<a class="inline-block" href="javascript:void(0)"><img src="http://localhost:3000/wp-content/themes/dataworks/images/etherscan.png" class="w-7"></a>
-<a class="inline-block" href="https://telegram.me/DataWorksEntry"><img src="http://localhost:3000/wp-content/themes/dataworks/images/telegram.png" class="w-7"></a>
-<a class="inline-block" href="javascript:void(0)"><img src="http://localhost:3000/wp-content/themes/dataworks/images/dextools.png" class="w-7"></a>
-<a class="inline-block" href="https://x.com/DataWorksUAE"><img src="http://localhost:3000/wp-content/themes/dataworks/images/x.png" class="w-7"></a>
+    first, socials = document.createElement('div'); props={className:'socials space-x-6 mt-10', 'innerHTML':`<a class="inline-block" href="javascript:void(0)"><img src="/wp-content/themes/dataworks/images/etherscan.png" class="w-7"></a>
+<a class="inline-block" href="https://telegram.me/DataWorksEntry"><img src="/wp-content/themes/dataworks/images/telegram.png" class="w-7"></a>
+<a class="inline-block" href="javascript:void(0)"><img src="/wp-content/themes/dataworks/images/dextools.png" class="w-7"></a>
+<a class="inline-block" href="https://x.com/DataWorksUAE"><img src="/wp-content/themes/dataworks/images/x.png" class="w-7"></a>
 `}; Object.keys(props).forEach(key=>socials[key]=props[key]);
 
     loop((itrvl, el, toText)=>{

@@ -56,8 +56,9 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
       'Access-Control-Allow-Origin': '*',
       'Content-type': mime.lookup(url) || 'application/octet-stream'
    }),
+   parts.params.slug||=req.headers.referer?.split('/').filter(e=>e).pop().split('?').shift().replace(/\//g, ''),
    /**modify title.rendered in the read json for slug=title */
-   /pages/.test(url)&&(slug=parts.params.slug?.replace(/^[^]|-[^]/g, e=>e.toUpperCase().replace('-',' ')))&&((cached=JSON.parse(cached))[0].title.rendered=/about/i.test(slug)?'':slug, cached=JSON.stringify(cached)),
+   /pages/.test(url)&&(slug=parts.params.slug?.replace(/^[^]|-[^]/g, e=>e.toUpperCase().replace('-',' ')))&&((cached=JSON.parse(cached))[0].title.rendered=/*/about/i.test(slug)?'':*/slug, cached=JSON.stringify(cached)),
    /** return dynamic data or static file that was read */ 
     asBg&&isJson&&(cached=cached.toString('utf-8').replace(/":\s*"[^,}]+/g, '":""')),
     /**slip in a styling to hide the preloader in the iframe hack for the balls on the about page*/
