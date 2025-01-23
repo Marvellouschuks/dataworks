@@ -68,7 +68,7 @@
 <a target="_blank" class="inline-block" href="https://telegram.me/DataWorksEntry"><img src="/wp-content/themes/dataworks/images/telegram.png" class="w-7"></a>
 <a target="_blank" class="inline-block" href="javascript:void(0)"><img src="/wp-content/themes/dataworks/images/dextools.png" class="w-7"></a>
 <a target="_blank" class="inline-block" href="https://x.com/DataWorksUAE"><img src="/wp-content/themes/dataworks/images/x.png" class="w-7"></a>
-`}; Object.keys(props).forEach(key=>socials[key]=props[key]);
+`}; Object.keys(props).forEach(key=>socials[key]=props[key]), socials.style.cssText='pointer-events:all';
 
     loop((itrvl, el, toText)=>{
       toText=(index, clear)=>{
