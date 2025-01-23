@@ -50,11 +50,11 @@
     }
     /*hide news section initially and onresize for the home page */
     (window.onresize=_=>loop((itrvl, el, rmv=[])=>{
-      (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'))&&(asBg||(rmv[1]=null), rmv.forEach(n=>n&&n.classList.add('hidden'))),
+      (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'))&&(asBg||(rmv[1]=null), console.log('::HIDE::',rmv[0]), rmv.forEach(n=>n&&n.classList.add('hidden'))),
       (el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
       .then(html=>{
         console.log('::DATA TOKEN::', el),
-        el.innerHTML+=html, animations?.addRippleAnimations(), busy=0, el.nextElementSibling.remove(),
+        el.innerHTML+=html, /*animations.addRippleAnimations(),*/ busy=0, el.nextElementSibling.remove(),
         el.parentNode.style.display='block'
       }))
     }))()
