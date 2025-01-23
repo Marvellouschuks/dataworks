@@ -1,3 +1,24 @@
+.c02137 {
+  display:block !important;
+}
+.c02151 {
+  padding-bottom:0;
+}
+.c02137 {
+  margin-bottom:0 !important;
+}
+/*alter page styling for news section header*/
+.theme-text {
+  color: #f5a94f;
+}
+.no-transit {
+  transition: 0s !important;  
+}
+.persist {
+  opacity:1 !important;
+  visibility: visible !important;
+}
+/*persist the preloaders until when removed*/
 @media (max-height: 650px) {
   .hero__title {
       font-size: 53px !important;

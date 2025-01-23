@@ -41,27 +41,31 @@
             "page_builder": [
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h1>Privacy Policy<\/h1>\n<p>Last updated: May 22, 2022<\/p>\n<p>By submitting the contact form, you acknowledge and agree to the following privacy terms:<\/p>\n"
+                    "text": "<h1>Privacy Policy<\/h1><p>Last updated: May 22, 2022<\/p>\n<p>By submitting the contact form, you acknowledge and agree to the following privacy terms:<\/p>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Information Collection and Use<\/h2>\n<p>When you submit this form, DataWorks collects and stores the information you provide, which may include:<\/p>\n<ul>\n<li>Your name<\/li>\n<li>Email address<\/li>\n<li>Phone number<\/li>\n<li>Message content<\/li>\n<li>Any additional information you choose to share<\/li>\n<\/ul>"
+                    "text": "<h2>Information Collection and Use<\/h2><p>When you submit this form, DataWorks collects and stores the information you provide, which may include:<\/p>\n<ul>\n<li>Your name<\/li>\n<li>Email address<\/li>\n<li>Phone number<\/li>\n<li>Message content<\/li>\n<li>Any additional information you choose to share<\/li>\n<\/ul>"
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Purpose and Processing<\/h2>\n<p>We use this information solely to:<\/p>\n<ul>\n<li>Respond to your inquiry or request<\/li>\n<li>Maintain a record of our communications<\/li>\n<li>Improve our customer service<\/li>\n<li>Contact you regarding your submission<\/li>\n<\/ul>\n"
+                    "text": "<h2>Purpose and Processing<\/h2><p>We use this information solely to:<\/p>\n<ul>\n<li>Respond to your inquiry or request<\/li>\n<li>Maintain a record of our communications<\/li>\n<li>Improve our customer service<\/li>\n<li>Contact you regarding your submission<\/li>\n<\/ul>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Data storage and Security<\/h2>\n<ul>\n<li>Your information is stored on our protected servers<\/li>\n<li>We implement appropriate technical and organizational measures to protect your data<\/li>\n<li>We retain your information only for as long as necessary to fulfill the purposes outlined in this policy<\/li>\n<\/ul>\n"
+                    "text": "<h2>Data storage and Security<\/h2><ul><li>Your information is stored on our protected servers<\/li>\n<li>We implement appropriate technical and organizational measures to protect your data<\/li>\n<li>We retain your information only for as long as necessary to fulfill the purposes outlined in this policy<\/li>\n<\/ul>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Information Sharing<\/h2>\n<ul>\n<li>We do not sell, rent or trade your personal information to third parties<\/li>\n<li>Your information may be accessed by authorized DataWorks employees only as necessary to respond to your inquiry<\/li>\n<li>We may share your information if required by law or to protect our legal rights<\/li>\n<\/ul>\n"
+                    "text": "<h2>Information Sharing<\/h2><ul>\n<li>We do not sell, rent or trade your personal information to third parties<\/li>\n<li>Your information may be accessed by authorized DataWorks employees only as necessary to respond to your inquiry<\/li>\n<li>We may share your information if required by law or to protect our legal rights<\/li>\n<\/ul>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Your Rights<\/h2>\n<p>You have the right to:<\/p>\n<ul>\n<li>Request access to your personal data<\/li>\n<li>Request correction of inaccurate data<\/li>\n<li>Request deletion of your data<\/li>\n<li>Withdraw your consent at any time<\/li>\n<li>Lodge a complaint with a supervisory authority<\/li>\n<\/ul>\n"
+                    "text": "<h2>Your Rights<\/h2><p>You have the right to:<\/p>\n<ul>\n<li>Request access to your personal data<\/li>\n<li>Request correction of inaccurate data<\/li>\n<li>Request deletion of your data<\/li>\n<li>Withdraw your consent at any time<\/li>\n<li>Lodge a complaint with a supervisory authority<\/li>\n<\/ul>\n"
+                },
+                {
+                    "acf_fc_layout": "text_section",
+                    "text": "<h1>Terms of Service and Risk Disclosure<\/h1><ul>\n<li><h3>Investment Understanding<\/h3><p>By participating in the DataWorks protocol and acquiring $DATA tokens, you acknowledge that you are investing in an emerging technology project with inherent risks. The value of $DATA tokens can fluctuate significantly based on market conditions, technical developments, and various other factors beyond our control.</p><\/li><br><br><li><h3>Financial Responsibility<\/h3><p>Any decision to purchase, hold, or sell $DATA tokens is made at your sole discretion. DataWorks team members, communications, or documentation do not constitute financial advice. You are solely responsible for conducting your own research and making informed investment decisions.</p><\/li><br><br><li><h3>Project Development<\/h3><p>DataWorks is committed to developing infrastructure solutions in the evolving landscape of AI, computing, and blockchain technology. While we maintain full transparency about our development progress and goals, the final implementation may evolve based on technological advancements, market conditions, and regulatory requirements.</p><\/li><br><br><li><h3>No Guarantees<\/h3><p>We make no guarantees regarding</p><ul><li>Future value of $DATA tokens<\/li><li>Project development timelines<\/li><li>Specific feature implementations<\/li><li>Return on investment<\/li><li>Market performance<\/li><\/ul><\/li><br><br><li><h3>Team Allocation<\/h3><p>A predetermined allocation of $DATA tokens is reserved for team compensation to ensure continued development of the protocol. This allocation is transparent and publicly documented.</p><\/li><br><br><li><h3>Technology Risk<\/h3><p>The computational infrastructure space, particularly in relation to AI and blockchain technology, is rapidly evolving. While we strive to adapt and innovate, technological challenges, competition, or market changes may impact our development trajectory.</p><\/li><br><br><li><h3>Protocol Usage<\/h3><p>DataWorks protocol usage, including node operation and resource allocation, is provided \"as is\" without warranty of any kind, either express or implied.</p><\/li><br><br><li><h3>Communication<\/h3><p>All official updates and announcements will be made through our designated channels. We commit to maintaining transparent communication regarding development progress, challenges, and protocol changes.</p><\/li><br><br><li><h3>Regulatory Compliance<\/h3><p>Users must comply with their local regulations regarding cryptocurrency and digital asset investments. DataWorks operates in compliance with applicable laws but cannot guarantee regulatory alignment in all jurisdictions.</p><\/li><br><br><li><h3>Acknowledgment<\/h3><p>By participating in the DataWorks ecosystem, you acknowledge understanding of these terms and accept the inherent risks involved in emerging technology projects.</p><\/li><\/ul>\n"
                 }
             ],
             "hero": {
