@@ -50,11 +50,10 @@
     }
     /*hide news section initially and onresize for the home page */
     (window.onresize=_=>loop((itrvl, el, rmv=[])=>{
-      (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'))&&(asBg||(rmv[1]=null), console.log('::HIDE::',rmv[0]), rmv.forEach(n=>n&&n.classList.add('hidden'))),
-      (el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
+      (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'), asBg||(rmv[1]=null), rmv.forEach(n=>n&&n.classList.add('hidden'))),
+      asBg||(el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
       .then(html=>{
-        console.log('::DATA TOKEN::', el),
-        el.innerHTML+=html, /*animations.addRippleAnimations(),*/ busy=0, el.nextElementSibling.remove(),
+        el.innerHTML+=html, animations.addRippleAnimations(), busy=0, el.nextElementSibling.remove(),
         el.parentNode.style.display='block'
       }))
     }))()
@@ -64,7 +63,13 @@
       "High-performance compute resources for machine\nlearning and AI model training. Burst capacity for\nintensive workloads. Access cutting-edge GPU\nclusters and distributed computing frameworks\noptimized for deep learning, with automated scaling\nto handle varying training demands and dataset sizes.",
       "Secure hosting for business-critical applications\nand data processing. Guaranteed uptime with dedicated\nresources. Our enterprise-grade infrastructure\nensures seamless scalability and\ncompliance with industry standards, while dedicated\nsupport teams provide 24/7 monitoring and incident response.",
       "Optimized infrastructure for blockchain operations,\nvalidator nodes, and mining. Dynamic allocation based\non market conditions. Our specialized hardware\nconfigurations maximize hash rates while\nminimizing energy consumption, supported by\nredundant power systems and low-latency network connections to major crypto networks."
-    ];
+    ],
+    first, socials = document.createElement('div'); props={className:'socials space-x-6 mt-10', 'innerHTML':`<a class="inline-block" href="javascript:void(0)"><img src="http://localhost:3000/wp-content/themes/dataworks/images/etherscan.png" class="w-7"></a>
+<a class="inline-block" href="https://telegram.me/DataWorksEntry"><img src="http://localhost:3000/wp-content/themes/dataworks/images/telegram.png" class="w-7"></a>
+<a class="inline-block" href="javascript:void(0)"><img src="http://localhost:3000/wp-content/themes/dataworks/images/dextools.png" class="w-7"></a>
+<a class="inline-block" href="https://x.com/DataWorksUAE"><img src="http://localhost:3000/wp-content/themes/dataworks/images/x.png" class="w-7"></a>
+`}; Object.keys(props).forEach(key=>socials[key]=props[key]);
+
     loop((itrvl, el, toText)=>{
       toText=(index, clear)=>{
         if(!el) return;
@@ -80,8 +85,15 @@
           }
         })
       };
-      if(path==='/') (/built for/i.test((el=qS('.c02132'))?.textContent)
+      /**remove mouse icon button on pages where it is not needed */
+      let btn_svg;
+      /privacy-policy|contact-us/.test(location.pathname)&&(btn_svg=qS('button>svg',!0)).length&&btn_svg[btn_svg.length-1]?.parentNode.classList.add('hidden'),
+      /**remove whitespace to the left of the form on the contact page*/
+      /contact-us/.test(location.pathname)&&qS('form')?.parentNode.previousElementSibling.classList.add('hidden');
+      if(path==='/'&&(el=qS('.c02132'))) (/built for/i.test(el.textContent)
         ? (reset&&toText(0, !0),/**reset after navigating to section*/ btns=qS(el,'button',!0), el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
-        : (reset=!0));
+        : reset=!0),
+        ((first=/decentralizing/i.test(el.textContent))
+        &&!el.lastElementChild.classList.contains('socials')&&(socials=el.appendChild(socials)), socials.classList[first?'add':'remove']('persist'));
     });
   })()
