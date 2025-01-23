@@ -30,7 +30,7 @@
       /**is true when navigating to a different page */
       (from=path!==location.pathname)&&(lds=[temp]), temp&&loader) &&(/community/.test(location.pathname)
     ? (page=qS('.page'))&&community()
-    : (asBg&&(loader.style.opacity='0'),
+    : (asBg&&(loader.style.opacity='0', qS('header')?.classList.add('hidden')),
       /about/.test(location.pathname)&&((entry=qS('.route-container>div')?.children)?.length&&qS(entry[0],'div')&&about(),
       (frame=qS('iframe')?.contentDocument)&&(nav_btns=qS(frame, 'button.c02124',!0))[3]&&nav_btns[3].click(),
       loaded||(lds.forEach(ld=>ld.classList.add('persist','no-transit')), nav_btns&&nav_btns[3]&&(loaded=!qS(frame,'.c0212').classList.contains('c0211'))&&setTimeout(_=>lds.forEach(ld=>ld.classList.remove('persist','no-transit')), 1e3+(from&&800)))
@@ -53,7 +53,7 @@
       (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'), asBg||(rmv[1]=null), rmv.forEach(n=>n&&n.classList.add('hidden'))),
       asBg||(el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
       .then(html=>{
-        el.innerHTML+=html, animations.addRippleAnimations(), busy=0, el.nextElementSibling.remove(),
+        el.innerHTML+=html, animations.addRippleAnimations(), busy=0, el.nextElementSibling?.remove(),
         el.parentNode.style.display='block'
       }))
     }))()
@@ -90,10 +90,10 @@
       /privacy-policy|contact-us/.test(location.pathname)&&(btn_svg=qS('button>svg',!0)).length&&btn_svg[btn_svg.length-1]?.parentNode.classList.add('hidden'),
       /**remove whitespace to the left of the form on the contact page*/
       /contact-us/.test(location.pathname)&&qS('form')?.parentNode.previousElementSibling.classList.add('hidden');
-      if(path==='/'&&(el=qS('.c02132'))) (/built for/i.test(el.textContent)
+      if(path==='/') (first=el=qS('.c02132'))&&((/built for/i.test(el.textContent)
         ? (reset&&toText(0, !0),/**reset after navigating to section*/ btns=qS(el,'button',!0), el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
         : reset=!0),
-        ((first=/decentralizing/i.test(el.textContent))
-        &&!el.lastElementChild.classList.contains('socials')&&(socials=el.appendChild(socials)), socials.classList[first?'add':'remove']('persist'));
+        (first=/decentralizing/i.test(el.textContent))&&!el.lastElementChild.classList.contains('socials')&&(socials=el.appendChild(socials))),
+        socials.classList[first?'add':'remove']('persist');
     });
   })()
