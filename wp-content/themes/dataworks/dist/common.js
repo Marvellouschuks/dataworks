@@ -23,9 +23,12 @@
       entry[busy=0].innerHTML=html
     })
   }
-  let loaded, temp, lds=[], nav_btns, frame;
+  let loaded, temp, lds=[], nav_btns, frame, _frame=document.createElement('iframe');
+  _frame.style.cssText='position: fixed;height: 100%;width: 100%;', _frame.src='/?background=true',
   /**perpetual listener to setup the pages tested for  after back-forward navigations to and from them*/
   loop(from=>{
+    /**remove cookie banner */
+    window.CybotCookiebotDialog?.remove(),
     (temp=qS('.c0212'), (lds[0]=loader=qS('.c022'))&&[0,4].forEach((n,i)=>lds[++i]=qS(lds[0], `.c0${n+23}`)),
       /**is true when navigating to a different page */
       (from=path!==location.pathname)&&(lds=[temp]), temp&&loader) &&(/community/.test(location.pathname)
@@ -92,7 +95,7 @@
       /contact-us/.test(location.pathname)&&qS('form')?.parentNode.previousElementSibling.classList.add('hidden');
       if(location.pathname==='/') (first=el=qS('.c02132')||qS('.c02134'))&&((/built for/i.test(el.textContent)
         ? (reset&&toText(0, !0),/**reset after navigating to section*/ btns=qS(el,'button',!0), el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
-        : reset=!0),
+        : reset=!0), window.atPageEnd=!reset,
         (first=/decentralizing/i.test(el.textContent))&&!el.lastElementChild.classList.contains('socials')&&(socials=el.appendChild(socials))),
         socials.classList[first?'add':'remove']('persist');
     });

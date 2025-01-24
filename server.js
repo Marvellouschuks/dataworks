@@ -62,7 +62,7 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
    /** return dynamic data or static file that was read */ 
     asBg&&isJson&&(cached=cached.toString('utf-8').replace(/":\s*"[^,}]+/g, '":""')),
     /**slip in a styling to hide the preloader in the iframe hack for the balls on the about page*/
-    /index/.test(url)&&parts.params.background&&(cached=cached.toString('utf-8').replace('<body>', '<body><style>.c022,.c0212{display: none}</style>'))
+    /index/.test(url)&&parts.params.background&&(cached=cached.toString('utf-8').replace('<body>', '<body><style>.c022,.c0212{display: none}</style>')),
     res.end(cached)
   }).catch((err, str)=>{
     str='::ERROR:: '+err,

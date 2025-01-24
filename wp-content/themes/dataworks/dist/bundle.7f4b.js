@@ -2914,6 +2914,7 @@
         t.force3D = 0,
         mr(e, t)
     }, mr = function(e, t) {
+        // if(window.atPageEnd) return;
         var n = t || this
           , r = n.xPercent
           , i = n.yPercent
