@@ -41,7 +41,7 @@
             "page_builder": [
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h1>Privacy Policy<\/h1><p>Last updated: January 25, 2025<\/p>\n<p>By submitting the contact form, you acknowledge and agree to the following privacy terms:<\/p>\n"
+                    "text": "<p>Last updated: January 25, 2025<\/p>\n<p>By submitting the contact form, you acknowledge and agree to the following privacy terms:<\/p>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
@@ -97,7 +97,7 @@
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Governing Law and Jurisdiction<\/h2><ul><li>This Agreement shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of law principles.<\/li><li>Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of [Jurisdiction].<\/li><\/ul>"
+                    "text": "<h2>Governing Law and Jurisdiction<\/h2><ul><li>This Agreement shall be governed by and construed in accordance with the laws of Dubai, without regard to its conflict of law principles.<\/li><li>Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of Dubai.<\/li><\/ul>"
                 }, 
                 {
                     "acf_fc_layout": "text_section",

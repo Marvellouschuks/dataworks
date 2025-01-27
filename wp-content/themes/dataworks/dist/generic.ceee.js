@@ -580,7 +580,7 @@
             }
             ));
             return Object(a.jsx)(r.a, {
-                title: "".concat(Object(i.decodeEntities)(t), " - ").concat(n.site_title)
+                title: "".concat(Object(i.decodeEntities)(t), " - ").concat(n?.site_title)
             })
         };
         c.defaultProps = {
@@ -777,7 +777,7 @@
                     className: a()(o()(o()({}, n.wrapper, !0), "footer__wrapper", !0)),
                     children: [Object(d.jsx)("div", {
                         className: a()(o()(o()({}, n.text, !0), "footer__text", !0)),
-                        children: s.footer_string_1
+                        children: s?.footer_string_1
                     }), Object(d.jsx)("div", {
                         className: a()(o()(o()({}, n.nav, !0), "footer__nav", !0)),
                         children: i.length && i.map((function(e, t) {
@@ -3499,7 +3499,7 @@
                     }, D.root, !0), D.isMobile, w.isMobile || w.isTablet)),
                     ref: Y,
                     children: [V && Object(E.jsx)(v.a, {
-                        title: X.title.rendered,
+                        title: X.title?.rendered,
                         meta: X.yoast_meta,
                         schema: X.yoast_json_ld
                     }), V && Object(E.jsx)("div", {
@@ -3511,7 +3511,7 @@
                                 children: Object(E.jsx)(y.a, {
                                     pageAnimationReady: r,
                                     className: D.hero,
-                                    title: X.title.rendered,
+                                    title: X.title?.rendered,
                                     payoff: null === (ce = X.acf) || void 0 === ce || null === (se = ce.hero) || void 0 === se ? void 0 : se.payoff,
                                     text: null === (le = X.acf) || void 0 === le || null === (ue = le.hero) || void 0 === ue ? void 0 : ue.text,
                                     image: X.featured_image
@@ -3528,7 +3528,7 @@
                                         var n;
                                         return Object(E.jsx)(O.a, {
                                             className: D.badge,
-                                            title: e.title.rendered,
+                                            title: e.title?.rendered,
                                             image: null === (n = e.featured_image) || void 0 === n ? void 0 : n.src,
                                             link: e.link
                                         }, t.toString())

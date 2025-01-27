@@ -26,7 +26,7 @@
             },
             "manifesto": {
                 "title": "<p>Transforming How<br \/>\nCompanies Share<br \/>\nComputing Power<\/p>\n",
-                "text": "<p>Dataworks creates a secure marketplace where companies can<br \/>\nshare and trade computing resources on demand. Our protocol<br \/>\nhandles everything - from resource allocation to security, allowing<br \/>\nenterprises to maximize their infrasturcture efficiency while<br \/>\nmaintaining complete control and isolation<\/p>\n",
+                "text": "<p>DataWorks creates a secure marketplace where companies can<br \/>\nshare and trade computing resources on demand. Our protocol<br \/>\nhandles everything - from resource allocation to security, allowing<br \/>\nenterprises to maximize their infrasturcture efficiency while<br \/>\nmaintaining complete control and isolation<\/p>\n",
                 "label": "",
                 "link": "javascript:void(0)"
             },
@@ -52,7 +52,7 @@
             },
           "news": {
           "pretitle": "",
-          "title": "\u003Cp\u003EData Token\u003C/p\u003E\n",
+          "title": "\u003Cp\u003EBeta Phase\u003C/p\u003E\n",
           "text": "",
           "label": "",
           "link": "",
@@ -61,7 +61,7 @@
       },
         "yoast_head": "",
         "yoast_head_json": {
-            "title": "Dataworks",
+            "title": "DataWorks",
             "description": "We maximize the efficiency of enterprises with guaranteed security, control and isolation with the use of a protocol hinged on blockchain and crypto operations",
             "robots": {
                 "index": "index",
@@ -73,10 +73,10 @@
             "canonical": "http:\/\/172.16.14.128:8080\/",
             "og_locale": "en_US",
             "og_type": "article",
-            "og_title": "Dataworks | Backend compute for businesses",
+            "og_title": "DataWorks | Backend compute for businesses",
             "og_description": "We maximize the efficiency of enterprises with guaranteed security, control and isolation with the use of a protocol hinged on blockchain and crypto operations",
             "og_url": "http:\/\/172.16.14.128:8080\/",
-            "og_site_name": "Dataworks",
+            "og_site_name": "DataWorks",
             "og_image": [
                 {
                     "width": 1024,
@@ -86,7 +86,7 @@
                 }
             ],
             "twitter_card": "summary_large_image",
-            "twitter_title": "Dataworks | Backend compute for enterprises",
+            "twitter_title": "DataWorks | Backend compute for enterprises",
             "twitter_description": "We maximize the efficiency of enterprises with guaranteed security, control and isolation with the use of a protocol hinged on blockchain and crypto operations.",
             "twitter_image": "/wp-content\/uploads\/2022\/06\/dataworks-default.png",
             "twitter_site": "@dataworksltd",
@@ -97,7 +97,7 @@
                         "@type": "WebSite",
                         "@id": "http:\/\/172.16.14.128:8080\/#website",
                         "url": "http:\/\/172.16.14.128:8080\/",
-                        "name": "Dataworks",
+                        "name": "DataWorks",
                         "description": "We offer enterprise-grade, isolated resources for backend computes",
                         "potentialAction": [
                             {
@@ -117,11 +117,11 @@
         "userAuth": {
             "user": false
         },
-        "yoast_title": "Dataworks",
+        "yoast_title": "DataWorks",
         "yoast_meta": [
             {
                 "name": "description",
-                "content": "Dataworks transforms enterprise computing via infrastructure allocation by use of a protocols based on AI, crypto operations and hardware-enforced isolation"
+                "content": "Transforming enterprise computing via infrastructure allocation. "
             },
             {
                 "name": "robots",
@@ -137,7 +137,7 @@
             },
             {
                 "property": "og:title",
-                "content": "Dataworks | Backend compute for businesses"
+                "content": "DataWorks | Backend compute for businesses"
             },
             {
                 "property": "og:description",
@@ -149,7 +149,7 @@
             },
             {
                 "property": "og:site_name",
-                "content": "Dataworks"
+                "content": "DataWorks"
             },
             {
                 "property": "og:image",
@@ -173,7 +173,7 @@
             },
             {
                 "name": "twitter:title",
-                "content": "Dataworks | Backend compute for businesses"
+                "content": "DataWorks | Backend compute for businesses"
             },
             {
                 "name": "twitter:description",
@@ -197,11 +197,11 @@
                 "@context": "https:\/\/schema.org",
                 "@graph": [
                     {
-                        "description": "Dataworks transforms enterprise computing via Infrastructure allocation by use of a protocols based on AI, crypto operations and hardware-enforced isolation.",
+                        "description": "Transforming enterprise computing via infrastructure allocation.",
                         "inLanguage": "en-US"
                     },
                     {
-                        "name": "Dataworks",
+                        "name": "DataWorks",
                         "description": "We maximize the efficiency of enterprises with guaranteed security, control and isolation with the use of a protocol hinged on blockchain and crypto operations.",
                         "inLanguage": "en-US"
                     }

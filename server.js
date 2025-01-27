@@ -47,20 +47,21 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
     isJson = /json$/.test(url);
     /**make an exception for privacy-policy because the page.json response that hydrates it is too dissimilar */
     parts.params.slug==='privacy-policy'&&(url=url.replace('pages', 'privacy-policy'))
-    /*(cached=cache[req.url])?resolve(cached):*/fs.readFile(url, (err, buf)=>{
+    (cached=cache[req.url])?resolve(cached):fs.readFile(url, (err, buf)=>{
       if(err) rej(err);
       else resolve(cache[req.url]=buf)
     })
   }).then((cached, slug)=>{
     res.writeHead(200, {
       'Access-Control-Allow-Origin': '*',
-      'Content-type': mime.lookup(url) || 'application/octet-stream'
+      'Content-type': mime.lookup(url) || 'application/octet-stream',
+      ...isJson||({'Cache-control': `'max-age=${/\.html/.test(url)?'3600, private':'604800, public, immutable, stale-while-revalidate=86400'},'`})
    }),
    parts.params.slug||=req.headers.referer?.split('/').filter(e=>e).pop().split('?').shift().replace(/\//g, ''),
    /**modify title.rendered in the read json for slug=title */
    /pages/.test(url)&&(slug=parts.params.slug?.replace(/^[^]|-[^]/g, e=>e.toUpperCase().replace('-',' ')))&&((cached=JSON.parse(cached))[0].title.rendered=/*/about/i.test(slug)?'':*/slug, cached=JSON.stringify(cached)),
    /** return dynamic data or static file that was read */ 
-    asBg&&isJson&&(cached=cached.toString('utf-8').replace(/":\s*"[^,}]+/g, '":""')),
+    (asBg||url.split(/\\|\//).pop().charAt(0)==='_')&&isJson&&((cached=JSON.parse(cached.toString('utf-8'))).forEach(el=>el.yoast_head=''), cached=JSON.stringify(cached).replace(/":\s*"[^"]+"/g, '":""')),
     /**slip in a styling to hide the preloader in the iframe hack for the balls on the about page*/
     /index/.test(url)&&parts.params.background&&(cached=cached.toString('utf-8').replace('<body>', '<body><style>.c022,.c0212{display: none}</style>')),
     res.end(cached)

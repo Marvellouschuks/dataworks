@@ -580,7 +580,7 @@
             }
             ));
             return Object(i.jsx)(A.a, {
-                title: "".concat(Object(o.decodeEntities)(I), " - ").concat(C.site_title)
+                title: "".concat(Object(o.decodeEntities)(I), " - ").concat(C?.site_title)
             })
         };
         t.defaultProps = {
@@ -777,7 +777,7 @@
                     className: i()(e()(e()({}, C.wrapper, !0), "footer__wrapper", !0)),
                     children: [Object(a.jsx)("div", {
                         className: i()(e()(e()({}, C.text, !0), "footer__text", !0)),
-                        children: n.footer_string_1
+                        children: n?.footer_string_1
                     }), Object(a.jsx)("div", {
                         className: i()(e()(e()({}, C.nav, !0), "footer__nav", !0)),
                         children: o.length && o.map((function(g, I) {

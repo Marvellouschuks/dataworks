@@ -2329,7 +2329,7 @@
               , u = a()(d, 2)
               , f = u[0]
               , m = u[1]
-              , b = t.sort((function(e, t) {
+              , b = t?.sort((function(e, t) {
                 var r, o;
                 return (null === (r = e.acf) || void 0 === r ? void 0 : r.surname) > (null === (o = t.acf) || void 0 === o ? void 0 : o.surname) ? 1 : -1
             }
@@ -2339,7 +2339,7 @@
                 return h < 768 ? 4 : 16
             }
             ), [h]);
-            return b.length > 0 && Object(P.jsxs)("div", {
+            return b?.length > 0 && Object(P.jsxs)("div", {
                 className: !0 === o ? s.mainCards : s.cards,
                 children: [Object(P.jsx)("div", {
                     className: s.borderTitle,
@@ -2359,7 +2359,7 @@
                         }, e.id)
                     }
                     ))
-                }), f && b.length > p && Object(P.jsx)("div", {
+                }), f && b?.length > p && Object(P.jsx)("div", {
                     className: s.viewMore,
                     children: Object(P.jsx)("button", {
                         onClick: function() {
@@ -2555,7 +2555,7 @@
                                     })
                                 })]
                             }), Me(), Object(P.jsx)(Y, {
-                                persons: oe.filter((function(e) {
+                                persons: oe.filter&&oe.filter((function(e) {
                                     return e
                                 }
                                 )).filter((function(e) {
@@ -2565,7 +2565,7 @@
                                 )),
                                 title: null === (le = re.acf) || void 0 === le ? void 0 : le.body?.leadership
                             }), Object(P.jsx)(Y, {
-                                persons: oe.filter((function(e) {
+                                persons: oe.filter&&oe.filter((function(e) {
                                     return e
                                 }
                                 )).filter((function(e) {
@@ -2575,7 +2575,7 @@
                                 )),
                                 title: null === (se = re.acf) || void 0 === se ? void 0 : se.body?.team
                             }), Object(P.jsx)(Y, {
-                                persons: oe.filter((function(e) {
+                                persons: oe.filter&&oe.filter((function(e) {
                                     return e
                                 }
                                 )).filter((function(e) {
@@ -2585,7 +2585,7 @@
                                 )),
                                 title: null === (de = re.acf) || void 0 === de ? void 0 : de.body?.main_board
                             }), Object(P.jsx)(Y, {
-                                persons: oe.filter((function(e) {
+                                persons: oe.filter&&oe.filter((function(e) {
                                     return e
                                 }
                                 )).filter((function(e) {
@@ -2595,7 +2595,7 @@
                                 )),
                                 title: null === (ue = re.acf) || void 0 === ue ? void 0 : ue.body?.scientific_advisory
                             }), Object(P.jsx)(Y, {
-                                persons: oe.filter((function(e) {
+                                persons: oe.filter&&oe.filter((function(e) {
                                     return e
                                 }
                                 )).filter((function(e) {

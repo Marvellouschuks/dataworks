@@ -34,7 +34,7 @@
       (from=path!==location.pathname)&&(lds=[temp]), temp&&loader) &&(/community/.test(location.pathname)
     ? (page=qS('.page'))&&community()
     : (asBg&&(loader.style.opacity='0', qS('header')?.classList.add('hidden')),
-      /about/.test(location.pathname)&&((entry=qS('.route-container>div')?.children)?.length&&qS(entry[0],'div')&&about(),
+      /infrastructure/.test(location.pathname)&&((entry=qS('.route-container>div')?.children)?.length&&qS(entry[0],'div')&&about(),
       (frame=qS('iframe')?.contentDocument)&&(nav_btns=qS(frame, 'button.c02124',!0))[3]&&nav_btns[3].click(),
       loaded||(lds.forEach(ld=>ld.classList.add('persist','no-transit')), nav_btns&&nav_btns[3]&&(loaded=!qS(frame,'.c0212').classList.contains('c0211'))&&setTimeout(_=>lds.forEach(ld=>ld.classList.remove('persist','no-transit')), 1e3+(from&&800)))
     )||(loaded=0)))
@@ -54,7 +54,7 @@
     /*hide news section initially and onresize for the home page */
     (window.onresize=_=>loop((itrvl, el, rmv=[])=>{
       (rmv[0]=qS('[style*="--speed"]'))&&(rmv[1]=qS('.c02119'), asBg||(rmv[1]=null), rmv.forEach(n=>n&&n.classList.add('hidden'))),
-      asBg||/\//.test(location.pathname)&&(el=qS(`.page.pageHome h2`)?.parentNode)&&!/total supply/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
+      asBg||/\//.test(location.pathname)&&(el=qS(`.page.pageHome h2`)?.parentNode)&&!/in our upcoming/i.test(el.textContent)&&(busy||=!!fetch('page.html').then(res=>res.text())
       .then(html=>{
         el.innerHTML+=html, busy=0, el.nextElementSibling?.remove(), animations.addRippleAnimations(),
         el.parentNode.style.display='block'
@@ -67,13 +67,13 @@
       "Secure hosting for business-critical applications\nand data processing. Guaranteed uptime with dedicated\nresources. Our enterprise-grade infrastructure\nensures seamless scalability and\ncompliance with industry standards, while dedicated\nsupport teams provide 24/7 monitoring and incident response.",
       "Optimized infrastructure for blockchain operations,\nvalidator nodes, and mining. Dynamic allocation based\non market conditions. Our specialized hardware\nconfigurations maximize hash rates while\nminimizing energy consumption, supported by\nredundant power systems and low-latency network connections to major crypto networks."
     ],
-    first, socials = document.createElement('div'); props={className:'socials space-x-6 mt-10', 'innerHTML':`<a target="_blank" class="inline-block" href="javascript:void(0)"><img src="/wp-content/themes/dataworks/images/etherscan.png" class="w-7"></a>
+    first, socials = document.createElement('div'); props={className:'lg:text-left text-center socials space-x-6 -mt-10 lg:mt-10', 'innerHTML':`<a target="_blank" class="inline-block" href="javascript:void(0)"><img src="/wp-content/themes/dataworks/images/etherscan.png" class="w-7"></a>
 <a target="_blank" class="inline-block" href="https://telegram.me/DataWorksEntry"><img src="/wp-content/themes/dataworks/images/telegram.png" class="w-7"></a>
 <a target="_blank" class="inline-block" href="javascript:void(0)"><img src="/wp-content/themes/dataworks/images/dextools.png" class="w-7"></a>
 <a target="_blank" class="inline-block" href="https://x.com/DataWorksUAE"><img src="/wp-content/themes/dataworks/images/x.png" class="w-7"></a>
 `}; Object.keys(props).forEach(key=>socials[key]=props[key]), socials.style.cssText='pointer-events:all';
 
-    loop((itrvl, el, toText)=>{
+    loop((itrvl, el, toText,_el)=>{
       toText=(index, clear)=>{
         if(!el) return;
         let lines=qS(el,'.line',!0),bool,
@@ -93,10 +93,10 @@
       /privacy-policy|contact-us/.test(location.pathname)&&(btn_svg=qS('button>svg',!0)).length&&btn_svg[btn_svg.length-1]?.parentNode.classList.add('hidden'),
       /**remove whitespace to the left of the form on the contact page*/
       /contact-us/.test(location.pathname)&&qS('form')?.parentNode.previousElementSibling.classList.add('hidden');
-      if(location.pathname==='/') (first=el=qS('.c02132')||qS('.c02134'))&&((/built for/i.test(el.textContent)
+      if(location.pathname==='/') (first=_el=innerWidth>=1085?qS('.c02154')||qS('.c02134')||qS('.c02132'):qS('.c0289')||qS('.c0291'))&&((/built for/i.test((el=qS('.c02132'))?.textContent)
         ? (reset&&toText(0, !0),/**reset after navigating to section*/ btns=qS(el,'button',!0), el.onclick=(ev,btn)=>(btn=ev.target).tagName=='BUTTON'&&toText(btns.indexOf(btn)), reset=0)
         : reset=!0), window.atPageEnd=!reset,
-        (first=/decentralizing/i.test(el.textContent))&&!el.lastElementChild.classList.contains('socials')&&(socials=el.appendChild(socials))),
+        (first=/decentralizing/i.test(_el?.textContent))&&!_el.lastElementChild.classList.contains('socials')&&(socials=_el.appendChild(socials))),
         socials.classList[first?'add':'remove']('persist');
     });
   })()

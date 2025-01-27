@@ -1,3 +1,7 @@
+.c02151,.c02213,.c0291,.c0293 {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+/*improve contrast of paragraph for landing page sections*/
 .c02151 {
   padding-bottom:0;
 }

@@ -115,6 +115,7 @@
                 }
                 ), 12e4);
                 s.onerror = s.onload = a,
+                // /home\.0381/.test(s.src)||
                 document.head.appendChild(s)
             }
         return Promise.all(t)
