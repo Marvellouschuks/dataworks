@@ -73,7 +73,7 @@
             "canonical": "http:\/\/172.16.14.128:8080\/",
             "og_locale": "en_US",
             "og_type": "article",
-            "og_title": "DataWorks | Backend compute for businesses",
+            "og_title": "DataWorks | Transforming enterprise computing via infrastructure allocation",
             "og_description": "We maximize the efficiency of enterprises with guaranteed security, control and isolation with the use of a protocol hinged on blockchain and crypto operations",
             "og_url": "http:\/\/172.16.14.128:8080\/",
             "og_site_name": "DataWorks",
@@ -86,7 +86,7 @@
                 }
             ],
             "twitter_card": "summary_large_image",
-            "twitter_title": "DataWorks | Backend compute for enterprises",
+            "twitter_title": "DataWorks | Transforming enterprise computing via infrastructure allocation",
             "twitter_description": "We maximize the efficiency of enterprises with guaranteed security, control and isolation with the use of a protocol hinged on blockchain and crypto operations.",
             "twitter_image": "/wp-content\/uploads\/2022\/06\/dataworks-default.png",
             "twitter_site": "@dataworksltd",
@@ -137,7 +137,7 @@
             },
             {
                 "property": "og:title",
-                "content": "DataWorks | Backend compute for businesses"
+                "content": "DataWorks | Transforming enterprise computing via infrastructure allocation"
             },
             {
                 "property": "og:description",
@@ -173,7 +173,7 @@
             },
             {
                 "name": "twitter:title",
-                "content": "DataWorks | Backend compute for businesses"
+                "content": "DataWorks | Transforming enterprise computing via infrastructure allocation"
             },
             {
                 "name": "twitter:description",

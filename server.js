@@ -55,7 +55,7 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
     res.writeHead(200, {
       'Access-Control-Allow-Origin': '*',
       'Content-type': mime.lookup(url) || 'application/octet-stream',
-      ...isJson||({'Cache-control': `'max-age=${/\.html/.test(url)?'3600, private':'604800, public, immutable, stale-while-revalidate=86400'},'`})
+      ...isJson||({'Cache-control': `'max-age=${/\.html/.test(url)?'300, private':'604800, public, immutable, stale-while-revalidate=86400'},'`})
    }),
    parts.params.slug||=req.headers.referer?.split('/').filter(e=>e).pop().split('?').shift().replace(/\//g, ''),
    /**modify title.rendered in the read json for slug=title */

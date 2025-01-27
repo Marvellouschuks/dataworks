@@ -36,7 +36,7 @@
     : (asBg&&(loader.style.opacity='0', qS('header')?.classList.add('hidden')),
       /infrastructure/.test(location.pathname)&&((entry=qS('.route-container>div')?.children)?.length&&qS(entry[0],'div')&&about(),
       (frame=qS('iframe')?.contentDocument)&&(nav_btns=qS(frame, 'button.c02124',!0))[3]&&nav_btns[3].click(),
-      loaded||(lds.forEach(ld=>ld.classList.add('persist','no-transit')), nav_btns&&nav_btns[3]&&(loaded=!qS(frame,'.c0212').classList.contains('c0211'))&&setTimeout(_=>lds.forEach(ld=>ld.classList.remove('persist','no-transit')), 1e3+(from&&800)))
+      loaded||(lds.forEach(ld=>ld.classList.add('persist','duration-300')), (loaded=innerWidth>=1085?nav_btns&&nav_btns[3]&&!qS(frame,'.c0212').classList.contains('c0211'):!0)&&setTimeout(_=>lds.forEach(ld=>ld.classList.remove('persist')), 1e3+(from&&800)))
     )||(loaded=0)))
   }, 0),
   window.addEventListener('DOMContentLoaded', _=>{
