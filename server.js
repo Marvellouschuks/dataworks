@@ -46,24 +46,32 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
     url = path.join('./', url+=(/json/.test(url)?'.json':'.html').repeat(!/\.[a-z]+/.test(url))),
     isJson = /json$/.test(url);
     /**make an exception for privacy-policy because the page.json response that hydrates it is too dissimilar */
-    parts.params.slug==='privacy-policy'&&(url=url.replace('pages', 'privacy-policy'))
-    (cached=cache[req.url])?resolve(cached):fs.readFile(url, (err, buf)=>{
+    parts.params.slug==='privacy-policy'&&(url=url.replace('pages', 'privacy-policy')),
+  /*(cached=cache[url])?resolve(cached):*/fs.readFile(url, (err, buf)=>{
       if(err) rej(err);
       else resolve(cache[req.url]=buf)
     })
-  }).then((cached, slug)=>{
+  }).then((cached, slug, bool, rgxes)=>{
     res.writeHead(200, {
       'Access-Control-Allow-Origin': '*',
       'Content-type': mime.lookup(url) || 'application/octet-stream',
-      ...isJson||({'Cache-control': `'max-age=${/\.html/.test(url)?'300, private':'604800, public, immutable, stale-while-revalidate=86400'},'`})
+      // ...isJson||({'Cache-control': `'max-age=${/\.html/.test(url)?'300, private':'604800, public, immutable, stale-while-revalidate=86400'},'`})
    }),
    parts.params.slug||=req.headers.referer?.split('/').filter(e=>e).pop().split('?').shift().replace(/\//g, ''),
    /**modify title.rendered in the read json for slug=title */
    /pages/.test(url)&&(slug=parts.params.slug?.replace(/^[^]|-[^]/g, e=>e.toUpperCase().replace('-',' ')))&&((cached=JSON.parse(cached))[0].title.rendered=/*/about/i.test(slug)?'':*/slug, cached=JSON.stringify(cached)),
-   /** return dynamic data or static file that was read */ 
-    (asBg||url.split(/\\|\//).pop().charAt(0)==='_')&&isJson&&((cached=JSON.parse(cached.toString('utf-8'))).forEach(el=>el.yoast_head=''), cached=JSON.stringify(cached).replace(/":\s*"[^"]+"/g, '":""')),
+    /** return dynamic data or static file that was read */ 
+    (asBg||url.split(/\\|\//).pop().charAt(0)==='_')&&isJson&&((cached=JSON.parse(cached.toString('utf-8'))).forEach&&cached.forEach(el=>el.yoast_head=''), cached=JSON.stringify(cached).replace(/":\s*"[^"]+"/g, '":""')),
+
+    fs.appendFileSync('write.txt', `${'index.html'===url}\t${/(privacy-policy|)\/\?/.test(req.headers.referer)}\t${req.headers.referer}\t\t${url}\n`),
+    req.headers.referer&&/^index.html/.test(url)&&
     /**slip in a styling to hide the preloader in the iframe hack for the balls on the about page*/
-    /index/.test(url)&&parts.params.background&&(cached=cached.toString('utf-8').replace('<body>', '<body><style>.c022,.c0212{display: none}</style>')),
+    (cached=cached.toString('utf-8').replace(/<body[^>]+>/, e=>(console.log('::MATCH::', [e]), '<body><style>button,img,svg,.c022,.c0212,.hidden {display: none !important;}</style>'))), 
+    /(privacy-policy|)\/\?/.test(req.headers.referer)&&(
+      rgxes=[/favicon|dataworks|js(on|)$/, /blur|favicon|dataworks|js(on|)$|glb$/],
+      !rgxes[+/light=true/.test(req.headers.referer)].test(url)&&(console.log('::EMPTIES::', [url]), cached=Buffer.from([]))
+    )
+    
     res.end(cached)
   }).catch((err, str)=>{
     str='::ERROR:: '+err,
