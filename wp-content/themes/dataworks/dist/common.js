@@ -1,6 +1,6 @@
 (function(){
   function loop(cb, t) {
-    let interval=setInterval(_=>cb(interval), 200)
+    let interval=setInterval(_=>cb(interval), 400)
   }
 
   let entry, asBg=/background/.test(location.search), draped, path=location.pathname, DOMLoaded, slice=(arg, ...n)=>[].slice.call(arg, ...n), qS=(el,str,all,res)=>(typeof str==='boolean'&&(all=str), typeof el=='string'&&(str=el,el=0), res=(el||document)['querySelector'+'All'.repeat(all)](str),all?slice(res):res),
