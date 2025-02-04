@@ -66,7 +66,7 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
     fs.appendFileSync('write.txt', `${'index.html'===url}\t${/(privacy-policy|)\/\?/.test(req.headers.referer)}\t${req.headers.referer}\t\t${url}\n`),
     req.headers.referer&&/^index.html/.test(url)&&
     /**slip in a styling to hide the preloader in the iframe hack for the balls on the about page*/
-    (cached=cached.toString('utf-8').replace(/<body[^>]+>/, e=>(console.log('::MATCH::', [e]), '<body><style>button,img,svg,.c022,.c0212,.hidden {display: none !important;}</style>'))), 
+    (cached=cached.toString('utf-8').replace(/<body[^>]+>/, e=>'<body><style>button,img,svg,.c022,.c0212,.hidden {display: none !important;}</style>')), 
     /(privacy-policy|)\/\?/.test(req.headers.referer)&&(
       rgxes=[/favicon|dataworks|js(on|)$/, /blur|favicon|dataworks|js(on|)$|glb$/],
       !rgxes[+/light=true/.test(req.headers.referer)].test(url)&&(console.log('::EMPTIES::', [url]), cached=Buffer.from([]))

@@ -21,12 +21,12 @@
             ],
             "hero": {
                 "title": "<p>Decentralizing Enterprise<br \/>\nInfrastructure<\/p>\n",
-                "text": "<p>DataWorks transforms enterprise computing through programmable<br \/>\ninfrastructure allocation. Our protocol enables dynamic distribution of<br \/>\ncompute resources across enterprise workloads, crypto operations,<br \/>\nand AI processing-all secured through hardware-enforced isolation.<\/p>\n",
+                "text": "<p>DataWorks transforms enterprise computing through programmable<br \/>\ninfrastructure allocation. Our protocol enables dynamic distribution of<br \/>\ncompute resources across enterprise workloads, crypto operations,<br \/>\nand AI processing—all secured through hardware-enforced isolation.<\/p>\n",
                 "label": ""
             },
             "manifesto": {
                 "title": "<p>Transforming How<br \/>\nCompanies Share<br \/>\nComputing Power<\/p>\n",
-                "text": "<p>DataWorks creates a secure marketplace where companies can<br \/>\nshare and trade computing resources on demand. Our protocol<br \/>\nhandles everything - from resource allocation to security, allowing<br \/>\nenterprises to maximize their infrasturcture efficiency while<br \/>\nmaintaining complete control and isolation<\/p>\n",
+                "text": "<p>DataWorks creates a secure marketplace where companies can<br \/>\nshare and trade computing resources on demand. Our protocol<br \/>\nhandles everything—from resource allocation to security, allowing<br \/>\nenterprises to maximize their infrasturcture efficiency while<br \/>\nmaintaining complete control and isolation.<\/p>\n",
                 "label": "",
                 "link": "javascript:void(0)"
             },

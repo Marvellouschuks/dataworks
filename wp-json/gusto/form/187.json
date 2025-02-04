@@ -55,7 +55,7 @@
             "type": "checkbox",
             "required": true,
             "placeholder": null,
-            "label": "I have read <a href=\/privacy-policy\/ target=_blank rel=noopener>privacy policy<\/a>."
+            "label": "I have read <a href=\/privacy-policy\/ target=_blank rel=noopener>and agreed to DataWorks's Terms of Service and Privacy Policy.<\/a>"
         }
     ]
 }

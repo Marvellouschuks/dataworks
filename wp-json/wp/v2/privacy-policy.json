@@ -53,11 +53,11 @@
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Data storage and Security<\/h2><ul><li>Your information is stored on our protected servers<\/li>\n<li>We implement appropriate technical and organizational measures to protect your data<\/li>\n<li>We retain your information only for as long as necessary to fulfill the purposes outlined in this policy<\/li>\n<\/ul>\n"
+                    "text": "<h2>Data Storage and Security<\/h2><ul><li>Your information is stored on our protected servers<\/li>\n<li>We implement appropriate technical and organizational measures to protect your data<\/li>\n<li>We retain your information only for as long as necessary to fulfill the purposes outlined in this policy<\/li>\n<\/ul>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Information Sharing<\/h2><ul>\n<li>We do not sell, rent or trade your personal information to third parties<\/li>\n<li>Your information may be accessed by authorized DataWorks employees only as necessary to respond to your inquiry<\/li>\n<li>We may share your information if required by law or to protect our legal rights<\/li>\n<\/ul>\n"
+                    "text": "<h2>Information Sharing<\/h2><ul>\n<li>We do not sell, rent, or trade your personal information to third parties<\/li>\n<li>Your information may be accessed by authorized DataWorks employees only as necessary to respond to your inquiry<\/li>\n<li>We may share your information if required by law or to protect our legal rights<\/li>\n<\/ul>\n"
                 },
                 {
                     "acf_fc_layout": "text_section",
@@ -81,7 +81,7 @@
                 },
                 {
                     "acf_fc_layout": "text_section",
-                    "text": "<h2>Technological Risks and Limitations<\/h2><ul><li><h3>Infrastructure Risks<\/h3>You acknowledge the following technological risks:<br>a) Smart contract vulnerabilities<br>b) Blockchain network congestion<br>c) Oracle manipulation<br>d) Consensus attacks<br>e) Protocol exploitation<br>f) Cryptographic weaknesses<br>g) Network partitioning<br>h) Data availability issues<\/li><br><li><h3>Operational Disclaimers<\/h3>The Protocol is provided \"AS IS\" and \"AS AVAILABLE\" without warranties of any kind, whether express, implied, or statutory, including but not limited to:<br>a) Merchantability<br>b) Fitness for a particular purpose<br>c) Non-infringement<br>d) Error-free operation<br>e) Uninterrupted service<br>d) Security guarantees<\/li><\/ul>"
+                    "text": "<h2>Technological Risks and Limitations<\/h2><ul><li><h3>Infrastructure Risks<\/h3>You acknowledge the following technological risks:<br>a) Smart contract vulnerabilities<br>b) Blockchain network congestion<br>c) Oracle manipulation<br>d) Consensus attacks<br>e) Protocol exploitation<br>f) Cryptographic weaknesses<br>g) Network partitioning<br>h) Data availability issues<\/li><br><li><h3>Operational Disclaimers<\/h3>The Protocol is provided \"AS IS\" and \"AS AVAILABLE\" without warranties of any kind, whether express, implied, or statutory, including but not limited to:<br>a) Merchantability<br>b) Fitness for a particular purpose<br>c) Non-infringement<br>d) Error-free operation<br>e) Uninterrupted service<br>f) Security guarantees<\/li><\/ul>"
                 },
                 {
                     "acf_fc_layout": "text_section",
