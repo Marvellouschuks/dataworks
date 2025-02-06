@@ -63,7 +63,6 @@ http.createServer((req, res, url, parts, data, asBg, isJson)=>{
     /** return dynamic data or static file that was read */ 
     (asBg||url.split(/\\|\//).pop().charAt(0)==='_')&&isJson&&((cached=JSON.parse(cached.toString('utf-8'))).forEach&&cached.forEach(el=>el.yoast_head=''), cached=JSON.stringify(cached).replace(/":\s*"[^"]+"/g, '":""')),
 
-    fs.appendFileSync('write.txt', `${'index.html'===url}\t${/(privacy-policy|)\/\?/.test(req.headers.referer)}\t${req.headers.referer}\t\t${url}\n`),
     req.headers.referer&&/^index.html/.test(url)&&
     /**slip in a styling to hide the preloader in the iframe hack for the balls on the about page*/
     (cached=cached.toString('utf-8').replace(/<body[^>]+>/, e=>'<body><style>button,img,svg,.c022,.c0212,.hidden {display: none !important;}</style>')), 
